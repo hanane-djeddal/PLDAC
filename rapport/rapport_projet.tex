@@ -1,0 +1,66 @@
+% pour genree un pdf: faire
+% pdflatex exemple.tex
+\documentclass{article}
+
+%% Paquets LateX utiles
+
+\usepackage[utf8]{inputenc} 		% encodage des caracteres utilise (pour les caracteres accentues) -- non utilise ici.
+%\usepackage[latin1]{inputenc} 		% autre encodage
+\usepackage[french]{babel}		% pour une mise en forme "francaise"
+\usepackage{amsmath,amssymb,amsthm}	% pour les maths
+\usepackage{graphicx}			% pour inclure des graphiques
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}			% pour ajouter des couleurs dans vos textes
+\usepackage{geometry}
+\geometry{hmargin=2.5cm,vmargin=3cm}
+\renewcommand{\contentsname}{\centering Contents}
+
+
+\begin{document}
+\begin{titlepage}
+    \begin{flushleft}
+    \includegraphics[width=11em]{logo.png}\\[1.5cm]
+    \end{flushleft}
+    %\begin{sffamily}
+    \begin{center}
+        \textsc{{\LARGE \ Master Données, Apprentissage et Connaissances-DAC}}\\[4cm]
+        \textsc{\Huge{RAPPORT PROJET DAC}}\\[1cm]
+        \textsc{\Huge{Un problème de clustering pour les infrastructures sans fil}}\\[5.5cm]
+        %\hspace{30pt}
+            % Author and supervisor
+        \begin{minipage}{1\textwidth}
+            \begin{flushleft} \large
+            \textsc{\LARGE{Auteurs :}}\\[0.5cm]
+            \textsc{Djeddal Hanane}\\
+            \textsc{Touzari Liticia}\\
+            \end{flushleft}
+        \end{minipage}
+        \vfill
+    \end{center}
+    %\end{sffamily}
+  \end{titlepage}
+  
+\maketitle
+\tableofcontents					% si on veut une table des matieres
+
+
+\newpage
+
+
+\section{Introduction}
+\paragraph{}
+    \begin{Large}\\[3.5cm]
+        \begin{center}
+        %\includegraphics[width=11em]{de.jpg}\\[30cm]
+        \end{center}
+    \end{Large}
+\newpage
+
+
+
+\section{Conclusion} 
+
+\end{document}
+
+
