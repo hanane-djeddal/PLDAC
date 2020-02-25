@@ -1,5 +1,6 @@
 # PLDAC : Un problème de clustering pour les infrastructures sans fil
 Projet de Master DAC (Sonnées, Apprentissage et Connaissances)
+#### Mots clé : C-RAN, Clustering, cloudification, virtualisation
 ### Résumé :
 L’augmentation croissante du trafic de données a posé de grands défis aux
 opérateurs mobiles pour augmenter leur capacité de traitement des données,
