@@ -1,5 +1,5 @@
 # PLDAC : Un problème de clustering pour les infrastructures sans fil
-Projet de Master DAC (Sonnées, Apprentissage et Connaissances)
+Projet de Master DAC (Données, Apprentissage et Connaissances)
 #### Mots clé : C-RAN, Clustering, cloudification, virtualisation
 ### Résumé :
 L’augmentation croissante du trafic de données a posé de grands défis aux
@@ -15,7 +15,7 @@ utilisée à différentes périodes de temps, et la capacité requise à déploy
 étant donné que les schémas de trafic des stations de base sont très dynamiques
 à différents moments et endroits, il est difficile de prévoir et de caractériser les
 schémas de trafic à l’avance pour réaliser des schémas de regroupement opti-
-maux. Dans ce rapport, nous abordons ces problèmes en étudiant les solutions
+maux. Dans ce projet, nous abordons ces problèmes en étudiant les solutions
 déjà proposées dans le cadre d’optimisation C-RAN basé sur l’apprentissage en
 profondeur. Premièrement, nous implémentons les algorithmes déjà existants,
 nous procédons par la suite à évaluer leur performances expérimentalement.
