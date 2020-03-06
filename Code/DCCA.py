@@ -15,8 +15,10 @@ import numpy as np
 
 class RRH:
     def __init__(self,i,lat,lng,t=[]):
-        self.lat=round(random.uniform(lat,lat+0.05),4)
-        self.lng=round(random.uniform(lng,lng+0.05),4)
+        #self.lat=round(random.uniform(lat,lat+0.05),4)
+        #self.lng=round(random.uniform(lng,lng+0.05),4)
+        self.lat=lat
+        self.lng=lng
         self.id=i
         self.trafic=t
         self.peak=[]
@@ -110,21 +112,24 @@ def evaluate(C,W,rrh,taux):
     c=connectivity(C,W,rrh)*math.log(taux/maxdist(C,rrh))
     return c
 
-def DCCA(r,F,B,max_iter,taux):
-    W=matriceComplementarite(r,B,taux)
+def DCCA(r,F,B,max_iter,taux,W):
+    
     P=[]  #list of clusters
     labels=[]   #assigns a label of cluster to each rrh
     #step1: assign every rrh to a cluster
     for rrh in r:
         P.append([rrh])
         labels.append(rrh.id)
+    indices=[i for i in range(len(r))]
     #step2 : itere & cluster
     fin=False
     it=0
     while (not fin):
         it+=1
         change=False
-        for rrh in r:
+        random.shuffle(indices)
+        for i in indices:
+            rrh=r[i]
             maxvalue=0
             newC=[]
             AC=adjacent_clusters(P,W,rrh)
@@ -133,7 +138,7 @@ def DCCA(r,F,B,max_iter,taux):
                 if(value > maxvalue):
                     maxvalue=value
                     newC=C
-            if(newC in P and labels[rrh.id] != P.index(newC)):
+            if (newC in P and labels[rrh.id] != P.index(newC)):
                 newlabel=P.index(newC)
                 oldlabel=labels[rrh.id] 
                 labels[rrh.id] = newlabel  #update the label
@@ -144,8 +149,29 @@ def DCCA(r,F,B,max_iter,taux):
         if(change == False or it== max_iter):
             fin=True
     return P,labels
-        
-        
+def iterative_DCCA (r,F,B,max_iter,taux,iter_part):
+    Popt=[]
+    lopt=[]
+    compOpt=0
+    W=matriceComplementarite(r,B,taux)
+    for i in range(iter_part):
+        P,l=DCCA(r,F,B,max_iter,taux,W)
+        c=complemntarity_partition(P,W,taux)
+        if(c>compOpt):
+            compOpt=c
+            Popt=P
+            lopt=l
+    return Popt,lopt
+     
+def complemntarity_partition(P,W,To):
+    s=0
+    for C in P:
+        for rrh in C:
+            if(len(C)>1):
+                s+= evaluate(C,W,rrh,To)
+            else:
+                s+=connectivity(C,W,rrh)
+    return s
 def print_p(P):
     for C in P:
         print("Cluster : ")
@@ -158,6 +184,8 @@ def normalize_trafic(F):
     nbcol=len(F[0])
     F_norm=np.empty([nblig,nbcol])
     for i in range (nblig):
+        maxlig=max(F[i])
+        minlig=min(F[i])
         for j in range(nbcol):
-            F_norm[i][j]=F[i][j]/np.sum(F[i])
+            F_norm[i][j]=F[i][j]-minlig/maxlig-minlig
     return F_norm

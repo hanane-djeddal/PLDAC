@@ -44,14 +44,18 @@ F_norm=DCCA.normalize_trafic(F)
 
 # CREATION DES RRHs
 r=[]   #liste des RRHs
+"""
 for i in range(Nr):
     r.append(DCCA.RRH(i,lat,lng,F_norm[i]))
-    
+"""
+r.append(DCCA.RRH(0,48.22,2.55,F_norm[0]))
+r.append(DCCA.RRH(1,48.23,2.53,F_norm[1]))
+r.append(DCCA.RRH(2,48.24,2.52,F_norm[2]))
  
 T=DCCA.peak_tracking(CBBU,F_norm,r)  
-
-P,l=DCCA.DCCA(r,F_norm,CBBU,max_iter,To)
-
+W=DCCA.matriceComplementarite(r,CBBU,To)
+#P,l=DCCA.DCCA(r,F_norm,CBBU,max_iter,To)
+P,l=DCCA.iterative_DCCA (r,F_norm,CBBU,max_iter,To,6)
 print(l)
 for C in (P):
     print("Cluster")
