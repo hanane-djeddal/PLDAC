@@ -1,13 +1,15 @@
-\babel@toc {french}{}
-\contentsline {paragraph}{}{2}{section*.3}% 
-\contentsline {paragraph}{}{2}{section*.4}% 
-\contentsline {paragraph}{}{2}{section*.5}% 
-\contentsline {section}{\numberline {1}Travail attendu}{3}{section.1}% 
-\contentsline {paragraph}{}{3}{section*.6}% 
-\contentsline {section}{\numberline {2}Mots cl\IeC {\'e}s retenus}{3}{section.2}% 
-\contentsline {section}{\numberline {3}Descriptif de la recherche documentaire}{4}{section.3}% 
-\contentsline {paragraph}{}{4}{section*.7}% 
-\contentsline {section}{\numberline {4}Bibliographie produite dans le cadre du projet}{4}{section.4}% 
-\contentsline {paragraph}{}{4}{section*.8}% 
-\contentsline {section}{\numberline {5}\IeC {\'E}valuation des sources}{5}{section.5}% 
-\contentsline {paragraph}{}{5}{section*.9}% 
+\contentsline {paragraph}{}{2}{section*.3}
+\contentsline {paragraph}{}{2}{section*.4}
+\contentsline {paragraph}{}{2}{section*.5}
+\contentsline {section}{\numberline {1}Travail attendu}{3}{section.1}
+\contentsline {paragraph}{}{3}{section*.6}
+\contentsline {section}{\numberline {2}Mots cl\IeC {\'e}s retenus}{3}{section.2}
+\contentsline {section}{\numberline {3}Descriptif de la recherche documentaire}{4}{section.3}
+\contentsline {paragraph}{}{4}{section*.7}
+\contentsline {section}{\numberline {4}Bibliographie produite dans le cadre du projet}{4}{section.4}
+\contentsline {paragraph}{}{4}{section*.8}
+\contentsline {section}{\numberline {5}\IeC {\'E}valuation des sources}{5}{section.5}
+\contentsline {paragraph}{}{6}{section*.9}
+\contentsline {paragraph}{}{6}{section*.10}
+\contentsline {paragraph}{}{6}{section*.11}
+\contentsline {paragraph}{}{7}{section*.13}
