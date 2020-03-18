@@ -1,0 +1,98 @@
+%Compilation : pdflatex
+\documentclass{report}
+\makeatletter
+\def\@makechapterhead#1{
+\vspace*{50\p@}
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter
+        %\huge\bfseries \@chapapp\space \thechapter
+        \Huge\bfseries \thechapter.\space%
+        %\par\nobreak
+        %\vskip 20\p@
+      \fi
+    \fi
+    \interlinepenalty\@M
+    \Huge \bfseries #1\par\nobreak
+    \vskip 40\p@
+  }}
+\makeatother
+
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%\usepackage[frenchb]{babel}
+%\usepackage{libertine}
+\usepackage[pdftex]{graphicx}
+\usepackage{color}
+
+%\setlength{\parindent}{0cm}
+%\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\newcommand{\hsp}{\hspace{50pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+
+%title{Clustering pour les infrastructures sans fils}
+%author{Hanane DJEDDAL, Liticia TOUZARI}
+%date{2020-02-10}
+
+%\pagenumbering{gobble} Supprimer numéro de page
+
+
+\begin{document}
+\begin{titlepage}
+    \begin{flushleft}
+    \includegraphics[width=11em]{logo.png}\\[1.5cm]
+    \end{flushleft}
+    \begin{center}
+        \textsc{{\LARGE \color{blue} Master Données, Apprentissage et Connaissances-DAC}}\\[5cm]
+        \textsc{\huge{RAPPORT PROJET DAC}}\\[1cm]
+        \textsc{\vspace{10pt}\Huge{Clustering pour les infrastructures sans fils}}\\[3cm]
+        \begin{minipage}{1\textwidth}
+            \begin{flushleft} \large
+            \textsc{\LARGE{Realisé par :}}\\[0.5cm]
+            \textsc{Hanane Djeddal}\\
+            \textsc{Liticia Touzari}\\[1.5 cm]
+            \textsc{\LARGE{Encadré par :}}\\[0.5cm]
+            \textsc{Anastasios Giovanidis}\\
+            \end{flushleft}
+        \end{minipage}
+        \vfill
+    \end{center}
+  \end{titlepage}
+
+ 
+  \vspace*{\stretch{0.5}}
+  \begin{center}
+    \section*{\LARGE{Résumé}}
+\end{center}
+    \paragraph{}
+  \Large{
+    L'augmentation croissante du trafic de données a posé de grands défis aux opérateurs mobiles pour augmenter leur capacité de traitement des données, 
+    ce qui entraîne une consommation d'énergie et des coûts de déploiement importants. Avec l'émergence de l'architecture Cloud Radio Access Network (C-RAN), 
+    les unités de traitement des données peuvent désormais être centralisées dans les centres de données et partagées entre les stations de base. En mappant 
+    un cluster de stations de base avec des schémas de trafic complémentaires à une unité de traitement de données, l'unité de traitement peut être pleinement 
+    utilisée à différentes périodes de temps, et la capacité requise à déployer devrait être inférieure à la somme des capacités d'une seule base stations. 
+    Cependant, étant donné que les schémas de trafic des stations de base sont très dynamiques à différents moments et endroits, il est difficile de prévoir 
+    et de caractériser les schémas de trafic à l'avance pour réaliser des schémas de regroupement optimaux. Dans ce rapport, nous abordons ces problèmes en 
+    étudiant les solutions déjà proposées dans le cadre d'optimisation C-RAN basé sur l'apprentissage en profondeur. Premièrement, nous implémentons les algorithmes
+    déjà existants, nous procédons par la suite à évaluer leur performances expérimentalement. Nous exposons aussi différents schéma de clustering et nous essayons à les adapter à notre problème. 
+    Nous terminons par appliquer les nouvelles méthodes sur des données réelles afin de pouvoir comparer les performances des différents méthodes. \\[2cm]
+  \textbf{Mots clés: }
+  C-RAN, RAN Cloudification, Clustering
+  }
+  \vspace*{\stretch{1}}
+  
+
+  \tableofcontents
+   
+
+
+  \newpage
+  \chapter{État de l'art}
+  
+
+
+  
+
+  \end{document}
