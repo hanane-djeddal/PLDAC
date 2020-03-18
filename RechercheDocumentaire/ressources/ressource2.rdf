@@ -1,0 +1,758 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Article rdf:about="https://ieeexplore.ieee.org/document/6882182/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2169-3536"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>I</foaf:surname>
+                        <foaf:givenName>Chih-Lin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Huang</foaf:surname>
+                        <foaf:givenName>Jinri</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Duan</foaf:surname>
+                        <foaf:givenName>Ran</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cui</foaf:surname>
+                        <foaf:givenName>Chunfeng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jiang</foaf:surname>
+                        <foaf:givenName>Jesse</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Lei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_3"/>
+        <dc:title>Recent Progress on C-RAN Centralization and Cloudification</dc:title>
+        <dcterms:abstract>This paper presents the latest progress on cloud RAN (C-RAN) in the areas of centralization and virtualization. A C-RAN system centralizes the baseband processing resources into a pool and virtualizes soft base-band units on demand. The major challenges for C-RAN including front-haul and virtualization are analyzed with potential solutions proposed. Extensive ﬁeld trials verify the viability of various front-haul solutions, including common public radio interface compression, single ﬁber bidirection and wavelengthdivision multiplexing. In addition, C-RANs facilitation of coordinated multipoint (CoMP) implementation is demonstrated with 50%–100% uplink CoMP gain observed in ﬁeld trials. Finally, a test bed is established based on general purpose platform with assisted accelerators. It is demonstrated that this test bed can support multi-RAT, i.e., Time-Division Duplexing Long Term Evolution, Frequency-Division Duplexing Long Term Evolution, and Global System for Mobile Communications efﬁciently and presents similar performance to traditional systems.</dcterms:abstract>
+        <dc:date>2014</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/document/6882182/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-16 22:07:55</dcterms:dateSubmitted>
+        <bib:pages>1030-1039</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2169-3536">
+        <prism:volume>2</prism:volume>
+        <dc:title>IEEE Access</dc:title>
+        <dc:identifier>DOI 10.1109/ACCESS.2014.2351411</dc:identifier>
+        <dcterms:alternative>IEEE Access</dcterms:alternative>
+        <dc:identifier>ISSN 2169-3536</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_3">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/3/I et al. - 2014 - Recent Progress on C-RAN Centralization and Cloudi.pdf"/>
+        <dc:title>I et al. - 2014 - Recent Progress on C-RAN Centralization and Cloudi.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://ieeexplore.ieee.org/document/7018201/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0890-8044"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wu</foaf:surname>
+                        <foaf:givenName>Jun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Zhifeng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hong</foaf:surname>
+                        <foaf:givenName>Yu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wen</foaf:surname>
+                        <foaf:givenName>Yonggang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_5"/>
+        <dc:title>Cloud radio access network (C-RAN): a primer</dc:title>
+        <dcterms:abstract>In the era of mobile Internet, mobile operators are facing pressure on ever-increasing capital expenditures and operating expenses with much less growth of income. Cloud Radio Access Network (C-RAN) is expected to be a candidate of next generation access network techniques that can solve operators’ puzzle. In this article, on the basis of a general survey of C-RAN, we present a novel logical structure of C-RAN that consists of a physical plane, a control plane, and a service plane. Compared to traditional architecture, the proposed C-RAN architecture emphasizes the notion of service cloud, service-oriented resource scheduling and management, thus it facilitates the utilization of new communication and computer techniques. With the extensive computation resource offered by the cloud platform, a coordinated user scheduling algorithm and parallel optimum precoding scheme are proposed, which can achieve better performance. The proposed scheme opens another door to design new algorithms matching well with C-RAN architecture, instead of only migrating existing algorithms from traditional architecture to C-RAN.</dcterms:abstract>
+        <dc:date>1/2015</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Cloud radio access network (C-RAN)</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ieeexplore.ieee.org/document/7018201/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-16 22:08:11</dcterms:dateSubmitted>
+        <bib:pages>35-41</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0890-8044">
+        <prism:volume>29</prism:volume>
+        <dc:title>IEEE Network</dc:title>
+        <dc:identifier>DOI 10.1109/MNET.2015.7018201</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>IEEE Network</dcterms:alternative>
+        <dc:identifier>ISSN 0890-8044</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_5">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/5/Wu et al. - 2015 - Cloud radio access network (C-RAN) a primer.pdf"/>
+        <dc:title>Wu et al. - 2015 - Cloud radio access network (C-RAN) a primer.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S1084804518302455">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:10848045"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Longbiao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yang</foaf:surname>
+                        <foaf:givenName>Dingqi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Daqing</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Cheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Jonathan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nguyen</foaf:surname>
+                        <foaf:givenName>Thi-Mai-Trang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_6"/>
+        <dc:title>Deep mobile traffic forecast and complementary base station clustering for C-RAN optimization</dc:title>
+        <dcterms:abstract>The increasingly growing data traﬃc has posed great challenges for mobile operators to increase their data processing capacity, which incurs a signiﬁcant energy consumption and deployment cost. With the emergence of the Cloud Radio Access Network (C-RAN) architecture, the data processing units can now be centralized in data centers and shared among base stations. By mapping a cluster of base stations with complementary traﬃc patterns to a data processing unit, the processing unit can be fully utilized in diﬀerent periods of time, and the required capacity to be deployed is expected to be smaller than the sum of capacities of single base stations. However, since the traﬃc patterns of base stations are highly dynamic in diﬀerent time and locations, it is challenging to foresee and characterize the traﬃc patterns in advance to make optimal clustering schemes. In this paper, we address these issues by proposing a deep-learning-based C-RAN optimization framework. First, we exploit a Multivariate Long Short-Term Memory (MuLSTM) model to learn the temporal dependency and spatial correlation among base station traﬃc patterns, and make accurate traﬃc forecast for a future period of time. Afterwards, we build a weighted graph to model the complementarity of base stations according to their traﬃc patterns, and propose a Distance-Constrained Complementarity-Aware (DCCA) algorithm to ﬁnd optimal base station clustering schemes with the objectives of optimizing capacity utility and deployment cost. We evaluate the performance of our framework using data in two months from real-world mobile networks in Milan and Trentino, Italy. Results show that our method eﬀectively increases the average capacity utility to 83.4% and 76.7%, and reduces the overall deployment cost to 48.4% and 51.7% of the traditional RAN architecture in the two datasets, respectively, which consistently outperforms the state-of-the-art baseline methods.</dcterms:abstract>
+        <dc:date>11/2018</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S1084804518302455</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-16 22:08:13</dcterms:dateSubmitted>
+        <bib:pages>59-69</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:10848045">
+        <prism:volume>121</prism:volume>
+        <dc:title>Journal of Network and Computer Applications</dc:title>
+        <dc:identifier>DOI 10.1016/j.jnca.2018.07.015</dc:identifier>
+        <dcterms:alternative>Journal of Network and Computer Applications</dcterms:alternative>
+        <dc:identifier>ISSN 10848045</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/6/Chen et al. - 2018 - Deep mobile traffic forecast and complementary bas.pdf"/>
+        <dc:title>Chen et al. - 2018 - Deep mobile traffic forecast and complementary bas.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Book rdf:about="urn:isbn:978-1-4614-7137-0%20978-1-4614-7138-7">
+        <z:itemType>book</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Series>
+               <dc:title>Springer Texts in Statistics</dc:title>
+            </bib:Series>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>New York, NY</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer New York</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>James</foaf:surname>
+                        <foaf:givenName>Gareth</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Witten</foaf:surname>
+                        <foaf:givenName>Daniela</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hastie</foaf:surname>
+                        <foaf:givenName>Trevor</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tibshirani</foaf:surname>
+                        <foaf:givenName>Robert</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_9"/>
+        <dc:title>An Introduction to Statistical Learning</dc:title>
+        <dc:date>2013</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/978-1-4614-7138-7</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-16 23:01:04</dcterms:dateSubmitted>
+        <dc:description>DOI: 10.1007/978-1-4614-7138-7</dc:description>
+        <prism:volume>103</prism:volume>
+        <dc:identifier>ISBN 978-1-4614-7137-0 978-1-4614-7138-7</dc:identifier>
+    </bib:Book>
+    <z:Attachment rdf:about="#item_9">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/9/James et al. - 2013 - An Introduction to Statistical Learning.pdf"/>
+        <dc:title>James et al. - 2013 - An Introduction to Statistical Learning.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://ieeexplore.ieee.org/document/6146494/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0163-6804"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lee</foaf:surname>
+                        <foaf:givenName>Daewon</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Seo</foaf:surname>
+                        <foaf:givenName>Hanbyul</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Clerckx</foaf:surname>
+                        <foaf:givenName>Bruno</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hardouin</foaf:surname>
+                        <foaf:givenName>Eric</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mazzarese</foaf:surname>
+                        <foaf:givenName>David</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nagata</foaf:surname>
+                        <foaf:givenName>Satoshi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sayana</foaf:surname>
+                        <foaf:givenName>Krishna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_12"/>
+        <dc:title>Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges</dc:title>
+        <dc:date>02/2012</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Coordinated multipoint transmission and reception in LTE-advanced</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ieeexplore.ieee.org/document/6146494/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-18 16:21:15</dcterms:dateSubmitted>
+        <bib:pages>148-155</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0163-6804">
+        <prism:volume>50</prism:volume>
+        <dc:title>IEEE Communications Magazine</dc:title>
+        <dc:identifier>DOI 10.1109/MCOM.2012.6146494</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>IEEE Commun. Mag.</dcterms:alternative>
+        <dc:identifier>ISSN 0163-6804</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_12">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/12/Lee et al. - 2012 - Coordinated multipoint transmission and reception .pdf"/>
+        <dc:title>Lee et al. - 2012 - Coordinated multipoint transmission and reception .pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://ieeexplore.ieee.org/document/8789426/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>7</prism:volume>
+                <dc:title>IEEE Access</dc:title>
+                <dc:identifier>DOI 10.1109/ACCESS.2019.2933567</dc:identifier>
+                <dcterms:alternative>IEEE Access</dcterms:alternative>
+                <dc:identifier>ISSN 2169-3536</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Han</foaf:surname>
+                        <foaf:givenName>Botao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Liu</foaf:surname>
+                        <foaf:givenName>Liu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Jiachi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tao</foaf:surname>
+                        <foaf:givenName>Cheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Qiu</foaf:surname>
+                        <foaf:givenName>Chencheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhou</foaf:surname>
+                        <foaf:givenName>Tao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Zheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Piao</foaf:surname>
+                        <foaf:givenName>Zheyan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_13"/>
+        <dc:title>Research on Resource Migration Based on Novel RRH-BBU Mapping in Cloud Radio Access Network for HSR Scenarios</dc:title>
+        <dcterms:abstract>Cloud radio access network (C-RAN) is considered as a promising architecture for 5G with advantages of green energy, convenient resources allocation. In this paper, we explore the feasibility of C-RAN for high-speed railway (HSR) scenarios. A novel phenomenon of group handover is deﬁned in the extensively and densely distributed railway network and we present a resource migration cost with a closedform expression to depict the group handover. To reduce the cost, we propose a novel connection relationship between the remote radio head (RRH) and the baseband unit (BBU) pool. Based on this, we establish a ﬂexible network so as to allocate the resource dynamically and formulate a graph by abstracting the RRH-BBU and BBU-BBU mapping relationship. Then the minimization of resource migration cost along the high-speed train (HST) routine is converted into the shortest path problem (SPP). By using the modiﬁed Floyd-Warshall algorithm, the SPP can be solved with high efﬁciency compared with the conventional algorithm. Finally, the simulation result shows that the proposed mechanism can decrease the resources migration cost signiﬁcantly.</dcterms:abstract>
+        <dc:date>2019</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/document/8789426/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-18 16:21:25</dcterms:dateSubmitted>
+        <bib:pages>108542-108550</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_13">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/13/Han et al. - 2019 - Research on Resource Migration Based on Novel RRH-.pdf"/>
+        <dc:title>Han et al. - 2019 - Research on Resource Migration Based on Novel RRH-.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_18">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Brown</foaf:surname>
+                        <foaf:givenName>Gabriel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_14"/>
+        <dc:title>Cloud RAN &amp; the Next-Generation Mobile Network Architecture</dc:title>
+        <dc:date>2017</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>9</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_14">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/14/Brown - 2017 - Cloud RAN &amp; the Next-Generation Mobile Network Arc.pdf"/>
+        <dc:title>Brown - 2017 - Cloud RAN &amp; the Next-Generation Mobile Network Arc.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://link.springer.com/10.1007/s10776-017-0335-6">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1068-9605,%201572-8129"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jaziri</foaf:surname>
+                        <foaf:givenName>Aymen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nasri</foaf:surname>
+                        <foaf:givenName>Ridha</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chahed</foaf:surname>
+                        <foaf:givenName>Tijani</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Tracking Traffic Peaks in Mobile Networks Using Statistics of Performance Metrics</dc:title>
+        <dc:date>12/2017</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/s10776-017-0335-6</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-18 17:31:05</dcterms:dateSubmitted>
+        <bib:pages>389-403</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1068-9605,%201572-8129">
+        <prism:volume>24</prism:volume>
+        <dc:title>International Journal of Wireless Information Networks</dc:title>
+        <dc:identifier>DOI 10.1007/s10776-017-0335-6</dc:identifier>
+        <prism:number>4</prism:number>
+        <dcterms:alternative>Int J Wireless Inf Networks</dcterms:alternative>
+        <dc:identifier>ISSN 1068-9605, 1572-8129</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6897914">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1553-877X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Checko</foaf:surname>
+                        <foaf:givenName>Aleksandra</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Christiansen</foaf:surname>
+                        <foaf:givenName>Henrik L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yan</foaf:surname>
+                        <foaf:givenName>Ying</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Scolari</foaf:surname>
+                        <foaf:givenName>Lara</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kardaras</foaf:surname>
+                        <foaf:givenName>Georgios</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Berger</foaf:surname>
+                        <foaf:givenName>Michael S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dittmann</foaf:surname>
+                        <foaf:givenName>Lars</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_24"/>
+        <dc:title>Cloud RAN for Mobile Networks—A Technology Overview</dc:title>
+        <dc:date>21/2015</dc:date>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6897914</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-18 17:36:14</dcterms:dateSubmitted>
+        <bib:pages>405-426</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1553-877X">
+        <prism:volume>17</prism:volume>
+        <dc:title>IEEE Communications Surveys &amp; Tutorials</dc:title>
+        <dc:identifier>DOI 10.1109/COMST.2014.2355255</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>IEEE Commun. Surv. Tutorials</dcterms:alternative>
+        <dc:identifier>ISSN 1553-877X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_24">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/24/Checko et al. - 2015 - Cloud RAN for Mobile Networks—A Technology Overvie.pdf"/>
+        <dc:title>Texte intégral</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://backend.orbit.dtu.dk/ws/files/100811128/COMST2355255PostPrint.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-18 17:36:32</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/2001.08992">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal><dc:title>arXiv:2001.08992 [eess]</dc:title></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Novaes</foaf:surname>
+                        <foaf:givenName>Camila</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nahum</foaf:surname>
+                        <foaf:givenName>Cleverson</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Trindade</foaf:surname>
+                        <foaf:givenName>Igor</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cederholm</foaf:surname>
+                        <foaf:givenName>Daniel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Patra</foaf:surname>
+                        <foaf:givenName>Gyanesh</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Klautau</foaf:surname>
+                        <foaf:givenName>Aldebaro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_25"/>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Electrical Engineering and Systems Science - Signal Processing</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Virtualized C-RAN Orchestration with Docker, Kubernetes and OpenAirInterface</dc:title>
+        <dcterms:abstract>Virtualization is a key feature in Cloud Radio Access Network (C-RAN). It can help to save costs since it allows the use of virtualized base stations instead of physically deployment in different areas. However, the creation and management of virtual base stations pools is not trivial and introduces new challenges to C-RAN deployment. This paper reports a method to orchestrate and manage a container-based C-RAN. We used several instances of the OpenAirInterface software running on Docker containers, and orchestrated them using Kubernetes. We demonstrate that using Kubernetes it is possible to dynamically scale remote radio heads (RRHs) and baseband units (BBUs) according to requirements of the network and parameters such as the server resources usage.</dcterms:abstract>
+        <dc:date>2020-01-12</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2001.08992</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-18 17:42:51</dcterms:dateSubmitted>
+        <dc:description>arXiv: 2001.08992</dc:description>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_25">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/25/Novaes et al. - 2020 - Virtualized C-RAN Orchestration with Docker, Kuber.pdf"/>
+        <dc:title>Novaes et al. - 2020 - Virtualized C-RAN Orchestration with Docker, Kuber.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://ieeexplore.ieee.org/document/8986606/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>8</prism:volume>
+                <dc:title>IEEE Access</dc:title>
+                <dc:identifier>DOI 10.1109/ACCESS.2020.2972333</dc:identifier>
+                <dcterms:alternative>IEEE Access</dcterms:alternative>
+                <dc:identifier>ISSN 2169-3536</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wu</foaf:surname>
+                        <foaf:givenName>Ziheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wu</foaf:surname>
+                        <foaf:givenName>Zixiang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_29"/>
+        <dc:title>An Enhanced Regularized k-Means Type Clustering Algorithm With Adaptive Weights</dc:title>
+        <dc:date>2020</dc:date>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/document/8986606/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-18 17:57:26</dcterms:dateSubmitted>
+        <bib:pages>31171-31179</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_29">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/29/Wu et Wu - 2020 - An Enhanced Regularized k-Means Type Clustering Al.pdf"/>
+        <dc:title>Texte intégral</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/ielx7/6287639/8948470/08986606.pdf?tp=&amp;arnumber=8986606&amp;isnumber=8948470&amp;ref=</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-18 17:57:38</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://ieeexplore.ieee.org/document/7956217/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1932-4537,%202373-7379"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Khan</foaf:surname>
+                        <foaf:givenName>Muhammad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Alhumaima</foaf:surname>
+                        <foaf:givenName>Raad S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Al-Raweshidy</foaf:surname>
+                        <foaf:givenName>Hamed S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>QoS-Aware Dynamic RRH Allocation in a Self-Optimized Cloud Radio Access Network With RRH Proximity Constraint</dc:title>
+        <dc:date>9/2017</dc:date>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/document/7956217/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2020-03-18 18:25:55</dcterms:dateSubmitted>
+        <bib:pages>730-744</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1932-4537,%202373-7379">
+        <prism:volume>14</prism:volume>
+        <dc:title>IEEE Transactions on Network and Service Management</dc:title>
+        <dc:identifier>DOI 10.1109/TNSM.2017.2719399</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>IEEE Trans. Netw. Serv. Manage.</dcterms:alternative>
+        <dc:identifier>ISSN 1932-4537, 2373-7379</dc:identifier>
+    </bib:Journal>
+</rdf:RDF>
