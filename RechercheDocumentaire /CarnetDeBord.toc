@@ -8,3 +8,4 @@
 \contentsline {paragraph}{}{4}{section*.7}
 \contentsline {section}{\numberline {4}Bibliographie produite dans le cadre du projet}{4}{section.4}
 \contentsline {section}{\numberline {5}\IeC {\'E}valuation des sources}{4}{section.5}
+\contentsline {paragraph}{}{4}{section*.8}
