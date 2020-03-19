@@ -53,9 +53,7 @@ for i in range(Nr):
 """
 #Avec les heures 
 df_traffic=pd.read_csv("traffictest.csv")
-#cells=df_traffic['CellName'].unique()
-#Nr=np.size(cells)
-Nr=df_geo_norm.count()[0]
+Nr=df_geo_norm.count()[0]  #nombre des RRHs
 F=np.empty([Nr,Nt])
 for h in range(24):
     fh=np.array((df_traffic.loc[(df_traffic['Hour']==h),:])['Traffic'])
@@ -66,22 +64,28 @@ for h in range(24):
 r=[]
 for i in range(Nr):
     r.append(DCCA.RRH(i,df_geo_norm.iloc[i,0],df_geo_norm.iloc[i,1],F[i]))
-print("here")
+
 F_norm=DCCA.normalize_trafic(F)
 T=DCCA.peak_tracking(CBBU,F_norm,r)  
 W=DCCA.matriceComplementarite(r,CBBU,To)
-print("here")
 P,l=DCCA.iterative_DCCA (r,F_norm,CBBU,max_iter,To,iter_converge)
 
-print("here")
-#affichage
+"""affichage des clusters"""
 k=0
+lescomp=[]
 for C in P:
     if (C!=[]):
         k+=1
+        lescomp.append(DCCA.complementarity(C,CBBU))
         X=np.empty([len(C),2])
         for i in range(len(C)):
             X[i][0]=C[i].lat
             X[i][1]=C[i].lng
-        plt.scatter(X[:,0],X[:,1])
-print(k)
+        #plt.scatter(X[:,0],X[:,1])
+lescomp=np.array(lescomp)
+print("K =",k,"\n",
+      "max :",np.max(lescomp),"\n",
+      "min :",np.min(lescomp),"\n",
+      "moyenne :",np.mean(lescomp),"\n",
+      "mediane :",np.median(lescomp),)
+plt.hist(lescomp,bins='auto')

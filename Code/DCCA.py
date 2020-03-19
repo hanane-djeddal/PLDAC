@@ -13,10 +13,10 @@ import random
 import math
 import numpy as np
 import pandas as pd
+
+distMaxC=0.015
 class RRH:
     def __init__(self,i,lat,lng,t=[]):
-        #self.lat=round(random.uniform(lat,lat+0.05),4)
-        #self.lng=round(random.uniform(lng,lng+0.05),4)
         self.lat=lat
         self.lng=lng
         self.id=i
@@ -95,6 +95,14 @@ def connectivity(C,W,rrh):
         res+=W[ri.id][rrh.id]
     return res
 
+def connectivity2(C,W,rrh,B):#On definit une distance max pour les clusters
+    res=0
+    Ctest=C.copy()           
+    Ctest.append(rrh)
+    if(maxdist(C,rrh)<= distMaxC):
+        res=complementarity(Ctest,B)
+    return res
+
 def adjacent_clusters(P,W,rrh):
     AC=[]
     for C in P:
@@ -115,6 +123,11 @@ def evaluate(C,W,rrh,taux):
         c=connectivity(C,W,rrh)*math.log(taux/m)
     return c
 
+def evaluate2(C,W,rrh,taux,B):
+    c=0
+    if(maxdist(C,rrh)!=0):
+        c=connectivity2(C,W,rrh,B)#*math.log(taux/maxdist(C,rrh))
+    return c
 def DCCA(r,F,B,max_iter,taux,W):
     
     P=[]  #list of clusters
@@ -137,7 +150,7 @@ def DCCA(r,F,B,max_iter,taux,W):
             newC=[]
             AC=adjacent_clusters(P,W,rrh)
             for C in AC:
-                value=evaluate(C,W,rrh,taux)
+                value=evaluate2(C,W,rrh,taux,B)
                 if(value > maxvalue):
                     maxvalue=value
                     newC=C
@@ -159,21 +172,21 @@ def iterative_DCCA (r,F,B,max_iter,taux,iter_part):
     W=matriceComplementarite(r,B,taux)
     for i in range(iter_part):
         P,l=DCCA(r,F,B,max_iter,taux,W)
-        c=complemntarity_partition(P,W,taux)
+        c=complemntarity_partition(P,W,taux,B)
         if(c>compOpt):
             compOpt=c
             Popt=P
             lopt=l
     return Popt,lopt
      
-def complemntarity_partition(P,W,To):
+def complemntarity_partition(P,W,To,B):
     s=0
     for C in P:
         for rrh in C:
             if(len(C)>1):
-                s+= evaluate(C,W,rrh,To)
+                s+= evaluate2(C,W,rrh,To,B)
             else:
-                s+=connectivity(C,W,rrh)
+                s+=connectivity2(C,W,rrh,B)
     return s
 def print_p(P):
     for C in P:
