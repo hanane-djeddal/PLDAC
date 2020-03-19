@@ -12,7 +12,7 @@ Implementation of RRHs-Clustering method proposed in ref1
 import random
 import math
 import numpy as np
-
+import pandas as pd
 class RRH:
     def __init__(self,i,lat,lng,t=[]):
         #self.lat=round(random.uniform(lat,lat+0.05),4)
@@ -109,7 +109,10 @@ def maxdist(C,rrh):
             m=d
     return m
 def evaluate(C,W,rrh,taux):
-    c=connectivity(C,W,rrh)*math.log(taux/maxdist(C,rrh))
+    m=maxdist(C,rrh)
+    c=0
+    if(m!=0):
+        c=connectivity(C,W,rrh)*math.log(taux/m)
     return c
 
 def DCCA(r,F,B,max_iter,taux,W):
@@ -180,12 +183,22 @@ def print_p(P):
         
     
 def normalize_trafic(F):
-    nblig=len(F)
-    nbcol=len(F[0])
-    F_norm=np.empty([nblig,nbcol])
-    for i in range (nblig):
-        maxlig=max(F[i])
-        minlig=min(F[i])
-        for j in range(nbcol):
-            F_norm[i][j]=F[i][j]-minlig/maxlig-minlig
+    lemax=np.max(F)
+    lemin=np.min(F)
+    F_norm=(F-lemin)/(lemax-lemin)
     return F_norm
+
+def normalize_distance(df):
+    col=df.columns
+    result={}
+    for i in range(1,len(col)):
+        colonne= df[col[i]].astype(float)
+        result[col[i]]=[]
+        max_X=max(colonne)
+        min_X=min(colonne)
+        for j in range(len(colonne)):
+            x=colonne[j]
+            if((max_X-min_X)!=0):
+                result[col[i]].append(float((x-min_X)/(max_X-min_X)))
+    d=pd.DataFrame (result, columns =[' Coord_X',' Coord_y'])
+    return d
