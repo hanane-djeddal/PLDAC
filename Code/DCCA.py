@@ -14,7 +14,7 @@ import math
 import numpy as np
 import pandas as pd
 
-distMaxC=0.015
+distMaxC=0.30
 class RRH:
     def __init__(self,i,lat,lng,t=[]):
         self.lat=lat

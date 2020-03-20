@@ -88,4 +88,4 @@ print("K =",k,"\n",
       "min :",np.min(lescomp),"\n",
       "moyenne :",np.mean(lescomp),"\n",
       "mediane :",np.median(lescomp),)
-plt.hist(lescomp,bins='auto')
+#plt.hist(lescomp,bins='auto')

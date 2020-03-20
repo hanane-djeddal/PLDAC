@@ -1,0 +1,58 @@
+% pour genree un pdf: faire
+% pdflatex exemple.tex
+\documentclass{article}
+
+%% Paquets LateX utiles
+
+\usepackage[utf8]{inputenc} 		% encodage des caracteres utilise (pour les caracteres accentues) -- non utilise ici.
+%\usepackage[latin1]{inputenc} 		% autre encodage
+\usepackage[french]{babel}		% pour une mise en forme "francaise"
+\usepackage{amsmath,amssymb,amsthm}	% pour les maths
+\usepackage{graphicx}			% pour inclure des graphiques
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}			% pour ajouter des couleurs dans vos textes
+\usepackage{geometry}
+\geometry{hmargin=2.5cm,vmargin=3cm}
+\renewcommand{\contentsname}{\centering Contents}
+
+
+\begin{document}
+    \begin{flushleft}
+    \includegraphics[width=11em]{logo.png}\\
+    \begin{center}
+        \textsc{{\color{blue} Master Données, Apprentissage et Connaissances-DAC}}\\[0.75cm]
+    \end{center}
+    \end{flushleft}
+    \begin{center}
+        \textsc{\Huge{PV DE RÉUNION}}\\[0.75cm]
+    \end{center}
+    \textbf{\Large\underline{Projet:}}
+    \textsc{\large{Problème de clustering pour les infrastructures sans fil.}}\\[0.75cm]
+    \textsc{\Large\underline{Date:}} \large{ Vendredi 20 mars 2020.}} \\
+    \textsc{\Large\underline{Début de la séance:}} \large{ 10:30.}} \\
+    \textsc{\Large\underline{Levée de la séance:}} \large{ 11:50.}} \\
+    \textsc{\Large\underline{Étaient présents:}} \large{\\ DJEDDAL Hanane. \\ TOUZARI Liticia.}} \\
+    \textsc{\Large\underline{Rapporteur:}} \large{ Djeddal Hanane.}} \\[0.5cm]
+    \textbf{\Large\underline{Ordre du jour:}}\\
+    \textsc{\large{-Présentation et discussion des résultats de l'application de Clustering K-means sur les données géographiques et l'application de DCCA et DCCA amélioré sur les données du trafic.\\
+    - Présentation de dataset du trafic. \\
+    - Discussion sur les contraintes physiques liés à la qualité de service: distance max entre RRHs.\\
+    - Discussion des améliorations possibles pour le K-means. }} \\[0.25cm]
+    \textbf{\Large\underline{À préparer pour la prochaine séance:}}\\
+    \textsc{\large{- Analyser les données géographiques Orange : nombre de noeuds par radius, Voronoi diagram.\\
+    - Analyser les données du trafic: rédaction des différents metriques. \\
+    - Evaluer la valeur de K optimal pour le k-means (en fonction de l'index de DUNN)\\
+    - Evaluer la distance acceptable entre deux noeuds afin de respecter les contraintes physiques de qualité de serive. \\
+    - Evaluer la complementarité des clusters dans le clustering géographique. \\
+    - Appliquer le Clustering Hiérarchique sur les données géographiques.\\
+    - Présentation du papier : User-Centric C-RAN Architecture for Ultra-Dense 5G Networks.\\
+    - Determiner la capacité  des BBU par rapport au trafic aggrregé normalisé. }}\\[0.25cm]
+    \textbf{\Large\underline{Date de la prochaine réunion:}}
+    \textsc{\large{Vendredi 03 avril 2020.}}
+
+
+
+\end{document}
+
+
