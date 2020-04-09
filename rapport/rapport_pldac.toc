@@ -1,2 +1,20 @@
-\contentsline {paragraph}{}{1}
-\contentsline {chapter}{\numberline {1}\IeC {\'E}tat de l'art}{3}
+\contentsline {paragraph}{}{1}{section*.2}
+\contentsline {chapter}{\numberline {1}\IeC {\'E}tat de l'art}{3}{chapter.1}
+\contentsline {paragraph}{}{3}{section*.4}
+\contentsline {section}{\numberline {1.1}L'architecture D-RAN}{3}{section.1.1}
+\contentsline {paragraph}{}{3}{section*.5}
+\contentsline {paragraph}{}{4}{section*.6}
+\contentsline {section}{\numberline {1.2}L'architecture C-RAN}{4}{section.1.2}
+\contentsline {paragraph}{}{4}{section*.7}
+\contentsline {paragraph}{}{4}{section*.8}
+\contentsline {paragraph}{}{4}{section*.9}
+\contentsline {section}{\numberline {1.3}M\IeC {\'e}thodes de Clustering}{5}{section.1.3}
+\contentsline {paragraph}{}{5}{section*.10}
+\contentsline {subsection}{\numberline {1.3.1}K-means Clustering}{6}{subsection.1.3.1}
+\contentsline {paragraph}{}{6}{section*.11}
+\contentsline {subsection}{\numberline {1.3.2}Clustering Hierarchique}{8}{subsection.1.3.2}
+\contentsline {paragraph}{}{8}{section*.12}
+\contentsline {section}{\numberline {1.4}L'algorithme DCCA}{9}{section.1.4}
+\contentsline {paragraph}{}{9}{section*.13}
+\contentsline {subsection}{\numberline {1.4.1}D\IeC {\'e}finitions}{10}{subsection.1.4.1}
+\contentsline {paragraph}{}{11}{section*.14}
