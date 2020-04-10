@@ -1,0 +1,13 @@
+	Telecommunication is the transmission of signs, signals, messages, words, writings, images and sounds or information of any nature by wire, radio, optical or other electromagnetic systems	
+
+	Radio access network (RAN) is part of a mobile telecommunication system. It implements a radio access technology. Conceptually, it resides between a device such as a mobile phone, a computer, or any remotely controlled machine and provides connection with its core network (CN)
+
+	C-RAN is a centralized, cloud computing-based architecture for radio access networks that supports 2G, 3G, 4G and future wireless communication standards.
+
+	bande de base désigne une technique de transmission dans laquelle le signal est envoyé directement sur le canal après Codage en ligne sans passer par un codage canal (sans modulation).
+
+	LTE (Long Term Evolution) est une évolution des normes de téléphonie mobile GSM/EDGE, CDMA2000, TD-SCDMA et UMTS.
+
+	A base transceiver station (BTS) is a piece of equipment that facilitates wireless communication between user equipment (UE) and a network
+
+	A remote radio head (RRH), also called a remote radio unit (RRU) in wireless networks, is a remote radio transceiver that connects to an operator radio control panel via electrical or wireless interface.The equipment is used to extend the coverage of a BTS/NodeB/eNodeB in challenging environments such as rural areas or tunnels.
