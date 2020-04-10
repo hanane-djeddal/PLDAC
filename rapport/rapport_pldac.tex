@@ -88,11 +88,27 @@
   }
   \vspace*{\stretch{1}}
   
+  \newpage
 
+  \vspace*{\stretch{0.5}}
+    \begin{center}
+  \section*{\LARGE{Introduction}}
+    \end{center}
+  \Large{\paragraph{}
+          Aujourd'hui, le trafic de données sur les réseaux mobiles connaît une croissance explosive à mesure que les smartphones et tablettes compatibles avec Internet deviennent de plus en plus populaires.\\
+  Afin de répondre à la demande croissante de trafic de données, les opérateurs de réseaux mobiles doivent augmenter leur capacité de traitement de données, comme le déploiement de plus de stations de base et l'ajout d'unités de traitement de données supplémentaires aux stations de base. \\
+  Cependant, les dépenses en capital liées au déploiement de ces infrastructures de réseau deviennent de plus en plus élevées. Par conséquent, l'optimisation des dépenses d'investissement et des dépenses d'exploitation tout en maintenant une qualité de service est devenue une nécessité pour les opérateurs de réseaux mobiles.
+  \paragraph{}
+  Ce projet vise à mettre en œuvre des techniques de clustering afin de regrouper les ressources et infrastructures radio dans le but d'améliorer l'efficacité des services. 
+  Chaque ville est desservie par plusieurs nœuds sans fil qui sont géographiquement séparés; chacun d'eux est responsable d'une charge différente des appels vocaux, de la consommation multimédia et des messages provenant de différentes zones de la ville dans la journée. 
+  A ce jour, les différents nœuds d'accès  du réseau ne coopèrent pas, et chaque nœud est plutôt responsable de sa propre zone géographique. Les architectures futures des réseaux proposent de regrouper plusieurs stations sans fil et les traiter comme un ensemble avec un contrôleur commun, afin que les stations surchargées puissent être soutenues par des stations sous-chargées. 
+  \paragraph{}
+  Dans le cadre de ce projet, on proposera des méthodes de clustering efficaces, adaptées aux spécificités de l'environnement sans fil et des métriques des services de télécommunication. On utilisera des données fournies par l'opérateur Orange.
+  }
+  \vspace*{\stretch{1}}
+  
   \tableofcontents
-   
-
-
+  
 \newpage
 \chapter{État de l'art}
 \paragraph{}
@@ -281,9 +297,7 @@ Ils servent comme clusters initiaux.
 \end{enumerate}
 \end{enumerate}
 \rule{\linewidth}{.1pt} 
-
 \chapter{Conception}
-
 \section{Analyse des données}
 \paragraph{}
 Dans cette section on va analyser les données de géo-localisation et de trafic fournies par l'opérateur Orange pour les villes française: Paris, Nantes, Lille et Lyon.
@@ -314,42 +328,44 @@ Exemple : Pour le RRH à la position (649540, 2626350) on obtient les graphes su
 \subsection{Données de Trafic}
 \subsubsection{Analyse des données pour la ville Lille}
 \paragraph{}
-Les données de trafic renseignent pour chaque RRH le nombres de bytes up et bytes down pour des timeslot des 10min entre les mois de mars et juin 2019 ainsi que le maximum et minimum des bytes en up et down pour les RRHs.\\
+Les données de trafic renseignent pour chaque RRH le nombres de bytes up et bytes down pour des timeslot de 10min entre les mois de mars et juin 2019 ainsi que le maximum et minimum des bytes en up et down pour les RRHs tel que:\\
+Min traffic up :  0.0  Max traffic up :  7249226387.374723\\
+Min traffic down :  0.0  Max traffic down :  15828358767.955057\\
 Les courbes suivantes représentent le trafic up et down pour un RRH donné:\\
 
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/byteUp1.png}
+     \includegraphics[scale=0.5]{images/byteUp1.png}
      \caption{Byte Up matin}\label{Fig:Data1}
    \end{minipage}\hfill
    \begin{minipage}{0.48\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/byteUp2.png}
+     \includegraphics[scale=0.5]{images/byteUp2.png}
      \caption{Byte Up aprés 14h }\label{Fig:Data2}
    \end{minipage}
 \end{figure} 
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/byteDn1.png}
+     \includegraphics[scale=0.5]{images/byteDn1.png}
      \caption{Byte Down matin}\label{Fig:Data1}
    \end{minipage}\hfill
    \begin{minipage}{0.48\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/byteDn2.png}
+     \includegraphics[scale=0.5]{images/byteDn2.png}
      \caption{Byte Down aprés 14h }\label{Fig:Data2}
    \end{minipage}
 \end{figure} 
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/byte1.png}
+     \includegraphics[scale=0.5]{images/byte1.png}
      \caption{Comparaison Byte Up et Byte Down matin}\label{Fig:Data1}
    \end{minipage}\hfill
    \begin{minipage}{0.48\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/byte2.png}
+     \includegraphics[scale=0.5]{images/byte2.png}
      \caption{Comparaison Byte Up et Byte Down aprés 14h }\label{Fig:Data2}
    \end{minipage}
 \end{figure} 
@@ -359,40 +375,48 @@ Les figures ci-dessous représente pour des périodes et jours différents le tr
 \begin{figure}[!htb]
    \begin{minipage}{0.4\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/8_20.png}
+     \includegraphics[scale=0.55]{images/8_20.png}
      \caption{Jour de semaine}\label{Fig:Data1}
    \end{minipage}\hfill
    \begin{minipage}{0.4\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/8_31.png}
+     \includegraphics[scale=0.55]{images/8_31.png}
      \caption{Weekend}\label{Fig:Data2}
    \end{minipage}
 \end{figure} 
 \begin{figure}[!htb]
    \begin{minipage}{0.4\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/12_20.png}
+     \includegraphics[scale=0.55]{images/12_20.png}
      \caption{Jour de semaine}\label{Fig:Data1}
    \end{minipage}\hfill
    \begin{minipage}{0.4\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/12_31.png}
+     \includegraphics[scale=0.55]{images/12_31.png}
      \caption{Weekend }\label{Fig:Data2}
    \end{minipage}
 \end{figure} 
 \begin{figure}[!htb]
    \begin{minipage}{0.4\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/23_20.png}
+     \includegraphics[scale=0.55]{images/23_20.png}
      \caption{Jour de semaine}\label{Fig:Data1}
    \end{minipage}\hfill
    \begin{minipage}{0.4\textwidth}
      \centering
-     \includegraphics[scale=0.6]{images/23_31.png}
+     \includegraphics[scale=0.55]{images/23_31.png}
      \caption{Weekend }\label{Fig:Data2}
    \end{minipage}
 \end{figure} 
-
-\vspace*{\stretch{0.5}}
-
+\section{Application des algorithmes}
+\paragraph{}
+Dans cette partie, on va implémenter les diérents algorithmes. On commence par applique l'algorithme k-means et le clustering 
+hiérarchique sur les données géographiques sans prendre en considération le trac. Ensuite, on applique une
+version de DCCA sur les données de trac et on évalue les résultats en variant les paramètres d'entrée.
+\subsection{Clustering sur les Données géographique}
+\subsection{Clustering sur les Données du trafic}
+\paragraph{}
+On applique DCCA sur le trac de la ville Lille avec des TimeSlot chaque une
+heure. Pourcela, on considère la moyenne du trac durant une heure. Pour des
+valeurs de $\tau$ , le seuil de distance, diérentes on obtient les clusters suivants:
 \end{document}

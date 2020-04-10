@@ -150,6 +150,43 @@ def DCCA(r,F,B,max_iter,taux,W):
             newC=[]
             AC=adjacent_clusters(P,W,rrh)
             for C in AC:
+                value=evaluate(C,W,rrh,taux)
+                if(value > maxvalue):
+                    maxvalue=value
+                    newC=C
+            if (newC in P and labels[rrh.id] != P.index(newC)):
+                newlabel=P.index(newC)
+                oldlabel=labels[rrh.id] 
+                labels[rrh.id] = newlabel  #update the label
+                newC.append(rrh)   #add rrh to the new cluster
+                P[newlabel]=newC   #update P
+                P[oldlabel].remove(rrh)   #delete rrh from its old cluster
+                change=True
+        if(change == False or it== max_iter):
+            fin=True
+    return P,labels
+def DCCA_ameliore(r,F,B,max_iter,taux,W):
+    
+    P=[]  #list of clusters
+    labels=[]   #assigns a label of cluster to each rrh
+    #step1: assign every rrh to a cluster
+    for rrh in r:
+        P.append([rrh])
+        labels.append(rrh.id)
+    indices=[i for i in range(len(r))]
+    #step2 : itere & cluster
+    fin=False
+    it=0
+    while (not fin):
+        it+=1
+        change=False
+        random.shuffle(indices)
+        for i in indices:
+            rrh=r[i]
+            maxvalue=0
+            newC=[]
+            AC=adjacent_clusters(P,W,rrh)
+            for C in AC:
                 value=evaluate2(C,W,rrh,taux,B)
                 if(value > maxvalue):
                     maxvalue=value
@@ -165,6 +202,7 @@ def DCCA(r,F,B,max_iter,taux,W):
         if(change == False or it== max_iter):
             fin=True
     return P,labels
+
 def iterative_DCCA (r,F,B,max_iter,taux,iter_part):
     Popt=[]
     lopt=[]
