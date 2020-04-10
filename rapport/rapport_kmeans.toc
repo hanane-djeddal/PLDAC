@@ -1,0 +1,10 @@
+\babel@toc {french}{}
+\contentsline {paragraph}{}{2}{section*.3}% 
+\contentsline {paragraph}{}{2}{section*.4}% 
+\contentsline {paragraph}{}{2}{section*.5}% 
+\contentsline {section}{\numberline {1}M\IeC {\'e}thodes de Clustering}{3}{section.1}% 
+\contentsline {paragraph}{}{3}{section*.6}% 
+\contentsline {subsection}{\numberline {1.1}K-means Clustering}{3}{subsection.1.1}% 
+\contentsline {paragraph}{}{3}{section*.7}% 
+\contentsline {subsection}{\numberline {1.2}Clustering Hierarchique}{6}{subsection.1.2}% 
+\contentsline {paragraph}{}{6}{section*.8}% 

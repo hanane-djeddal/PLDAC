@@ -26,11 +26,12 @@
 \usepackage[T1]{fontenc} 
 \usepackage{amsmath,amssymb,amsthm}	% pour les maths
 \usepackage{graphicx}			% pour inclure des graphiques
-
+\usepackage{float}
 \usepackage[hidelinks]{hyperref}
 \usepackage{color}			% pour ajouter des couleurs dans vos textes
 \usepackage{geometry}
 \usepackage{tabularx}
+\usepackage{caption}
 \setlength\abovecaptionskip{0pt}
 \geometry{hmargin=2.5cm,vmargin=3cm}
 \renewcommand{\contentsname}{\centering Contents}
@@ -281,14 +282,117 @@ Ils servent comme clusters initiaux.
 \end{enumerate}
 \rule{\linewidth}{.1pt} 
 
+\chapter{Conception}
 
+\section{Analyse des données}
+\paragraph{}
+Dans cette section on va analyser les données de géo-localisation et de trafic fournies par l'opérateur Orange pour les villes française: Paris, Nantes, Lille et Lyon.
+\subsection{Données Géographiques}
+\paragraph{}
+Les données géographiques représentent les positions des RRHs sur un plan 2D (coordonnée x et y).\\
+\subsubsection{Analyse des données pour la ville Lille}
+\paragraph{}
+- Nombre de RRHs est 1394 et le nombre de régions est de 88 RRHs (avec des RRHs à la même position).\\
+\paragraph{}
+- Cellules géographiques : le digramme de Voronoi ci-dessous permet de délimiter les zones géographiques dont est responsable chaque RRH et ainsi calculer la superficie de la zone :\\
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[scale=0.6]{images/voronoi-areas.png}\\
+  \caption{Diagramme de Voronoi pour Lille}   
+  \label{fig:picture}
+\end{center}
+\end{figure}
+\paragraph{}
+- Pour chaque RRH on évalue le nombre RRHs à distance variante de celui-ci:\\
+Exemple : Pour le RRH à la position (649540, 2626350) on obtient les graphes suivants avec un pas de 500 m:\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.6]{images/histogramme_rrh_dist.png}
+  \caption{Histogramme du nombre de RRHs par distance d'un point}   
+  \label{fig:picture}
+\end{figure}
+\subsection{Données de Trafic}
+\subsubsection{Analyse des données pour la ville Lille}
+\paragraph{}
+Les données de trafic renseignent pour chaque RRH le nombres de bytes up et bytes down pour des timeslot des 10min entre les mois de mars et juin 2019 ainsi que le maximum et minimum des bytes en up et down pour les RRHs.\\
+Les courbes suivantes représentent le trafic up et down pour un RRH donné:\\
+
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/byteUp1.png}
+     \caption{Byte Up matin}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/byteUp2.png}
+     \caption{Byte Up aprés 14h }\label{Fig:Data2}
+   \end{minipage}
+\end{figure} 
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/byteDn1.png}
+     \caption{Byte Down matin}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/byteDn2.png}
+     \caption{Byte Down aprés 14h }\label{Fig:Data2}
+   \end{minipage}
+\end{figure} 
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/byte1.png}
+     \caption{Comparaison Byte Up et Byte Down matin}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/byte2.png}
+     \caption{Comparaison Byte Up et Byte Down aprés 14h }\label{Fig:Data2}
+   \end{minipage}
+\end{figure} 
+
+On remarque bien que le trafic en down est beaucoup plus élevé qu'en up, et on peut facilement repérer les pics de trafic.\\
+Les figures ci-dessous représente pour des périodes et jours différents le trafic RRH dans les régions du digramme de voronoi avec un code couleur.
+\begin{figure}[!htb]
+   \begin{minipage}{0.4\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/8_20.png}
+     \caption{Jour de semaine}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}{0.4\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/8_31.png}
+     \caption{Weekend}\label{Fig:Data2}
+   \end{minipage}
+\end{figure} 
+\begin{figure}[!htb]
+   \begin{minipage}{0.4\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/12_20.png}
+     \caption{Jour de semaine}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}{0.4\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/12_31.png}
+     \caption{Weekend }\label{Fig:Data2}
+   \end{minipage}
+\end{figure} 
+\begin{figure}[!htb]
+   \begin{minipage}{0.4\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/23_20.png}
+     \caption{Jour de semaine}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}{0.4\textwidth}
+     \centering
+     \includegraphics[scale=0.6]{images/23_31.png}
+     \caption{Weekend }\label{Fig:Data2}
+   \end{minipage}
+\end{figure} 
 
 \vspace*{\stretch{0.5}}
-\begin{center}
-\section*{\LARGE{Conclusion}}
-   \end{center}
- \Large{\paragraph{}
 
- }
- \vspace*{\stretch{1}}
 \end{document}
