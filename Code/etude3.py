@@ -38,7 +38,7 @@ fichier2.close()
 """       
 df_geo=pd.read_csv("BS_Locations/Lille_antenna_location2.csv")
 
-df_geo_norm=DCCA.normalize_distance(df_geo)
+df_geo_norm=DCCA.normalize_distance(df_geo) #a que les deux colonnes X et Y sans ID
 
 #Avec les heures 
 """
@@ -85,7 +85,7 @@ for i in range (Nr) :
                 j+=1
         F[i][h]=td #/nbr
         Fup[i][h]=tu 
-    r.append(DCCA.RRH(i,df_geo_norm.iloc[i,0],df_geo_norm.iloc[i,1],F[i]))
+    r.append(DCCA.RRH(id,i,df_geo_norm.iloc[i,0],df_geo_norm.iloc[i,1],F[i]))
 
 
 

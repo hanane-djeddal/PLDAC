@@ -16,12 +16,16 @@ d=[[2,4],[],[]]
 indices=[i for i in range(5)]
 random.shuffle(indices)
 #print(indices)
+ar=np.arange(1,15)
+ar2d=np.reshape(ar,(-1,2))
 e=np.random.choice(np.arange(1, 7), p=[0.1, 0.05, 0.05, 0.2, 0.4, 0.2])
 """
 df=pd.read_csv("traffictest.csv")
 t=df.loc[df['Hour']==23,:].count()
 cells=df['Hour'].unique()
-print(df.count(),t,np.size(cells))"""
+print(df.count(),t,np.size(cells))
 h=np.histogram(np.array(c))
 print(h)
 plt.hist(c,bins='auto')
+"""
+print(ar2d[:,0:1])

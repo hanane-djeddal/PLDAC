@@ -16,12 +16,13 @@ import pandas as pd
 
 distMaxC=0.30
 class RRH:
-    def __init__(self,i,lat,lng,t=[]):
+    def __init__(self,i,pos,lat,lng,t=[]):
         self.lat=lat
         self.lng=lng
         self.id=i
         self.trafic=t
         self.peak=[]
+        self.pos=pos
     def setTrafic(self,t):
         self.trafic=t
     def setPeak(self,p):
@@ -92,7 +93,7 @@ def matriceComplementarite(r,B,To):
 def connectivity(C,W,rrh):
     res=0
     for ri in C:
-        res+=W[ri.id][rrh.id]
+        res+=W[ri.pos][rrh.pos]
     return res
 
 def connectivity2(C,W,rrh,B):#On definit une distance max pour les clusters
@@ -135,7 +136,7 @@ def DCCA(r,F,B,max_iter,taux,W):
     #step1: assign every rrh to a cluster
     for rrh in r:
         P.append([rrh])
-        labels.append(rrh.id)
+        labels.append(rrh.pos)
     indices=[i for i in range(len(r))]
     #step2 : itere & cluster
     fin=False
@@ -154,10 +155,10 @@ def DCCA(r,F,B,max_iter,taux,W):
                 if(value > maxvalue):
                     maxvalue=value
                     newC=C
-            if (newC in P and labels[rrh.id] != P.index(newC)):
+            if (newC in P and labels[rrh.pos] != P.index(newC)):
                 newlabel=P.index(newC)
-                oldlabel=labels[rrh.id] 
-                labels[rrh.id] = newlabel  #update the label
+                oldlabel=labels[rrh.pos] 
+                labels[rrh.pos] = newlabel  #update the label
                 newC.append(rrh)   #add rrh to the new cluster
                 P[newlabel]=newC   #update P
                 P[oldlabel].remove(rrh)   #delete rrh from its old cluster
@@ -172,7 +173,7 @@ def DCCA_ameliore(r,F,B,max_iter,taux,W):
     #step1: assign every rrh to a cluster
     for rrh in r:
         P.append([rrh])
-        labels.append(rrh.id)
+        labels.append(rrh.pos)
     indices=[i for i in range(len(r))]
     #step2 : itere & cluster
     fin=False
@@ -191,10 +192,10 @@ def DCCA_ameliore(r,F,B,max_iter,taux,W):
                 if(value > maxvalue):
                     maxvalue=value
                     newC=C
-            if (newC in P and labels[rrh.id] != P.index(newC)):
+            if (newC in P and labels[rrh.pos] != P.index(newC)):
                 newlabel=P.index(newC)
-                oldlabel=labels[rrh.id] 
-                labels[rrh.id] = newlabel  #update the label
+                oldlabel=labels[rrh.pos] 
+                labels[rrh.pos] = newlabel  #update the label
                 newC.append(rrh)   #add rrh to the new cluster
                 P[newlabel]=newC   #update P
                 P[oldlabel].remove(rrh)   #delete rrh from its old cluster
