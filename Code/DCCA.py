@@ -93,6 +93,9 @@ def matriceComplementarite(r,B,To):
 def connectivity(C,W,rrh):
     res=0
     for ri in C:
+        if(W[ri.pos][rrh.pos] == 0):
+            res=0
+            break
         res+=W[ri.pos][rrh.pos]
     return res
 

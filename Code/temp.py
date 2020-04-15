@@ -28,4 +28,13 @@ h=np.histogram(np.array(c))
 print(h)
 plt.hist(c,bins='auto')
 """
-print(ar2d[:,0:1])
+def c(l):
+    rep="no"
+    for i in l:
+        if (i==6):
+            rep="yes"
+            break
+        rep=rep+"i"
+    print(i)
+    return rep
+print(c([1,2,4,6,5,8]))
