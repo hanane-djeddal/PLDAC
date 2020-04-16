@@ -661,4 +661,27 @@ pour un jour de semaine et durant le weekend. \\
     \caption{Weekend}\label{Fig:Data2}
   \end{minipage}
 \end{figure}\\
+
+\section{K-means Vs DCCA}
+Après avoir appliqué les algorithmes DCCA et k-means sur les données de la ville de Lille, on compare leurs performances en terme d'utilité de la capacité de la BBU. 
+Pour cela, on calcule le gain en multiplexage statique :\\
+SMG = $\frac{\sum_{s=1}^N CBBU(C_{s})} {CBBU(pool)}$  \\
+Tel que N est le nombre des stations de base, $CBBU(C_{s})$ est la capacité de la BBU nécessaire pour soutenir la station 
+de base \emph{s} et CBBU(pool) est la capacité de la BBU nécessaire pour le pool des BBUs.\\
+Sur le trafic du jour 2019-05-23, avec K=10 pour les K-means, le gain en multiplexage statique est de 1.25 tant que le DCCA 
+donne un gain de 1.31, soit une amélioration de 4.8\% . Les clusters formés par DCCA étants complémentaires, la capacité requise 
+pour chaque cluster est donc inférieure à celle requise pour les clusters de k-means, ce qui permet cette amélioration.\\
+En utilise une autre mesure pour comparer la charge du trafic dans les clusters. Pour cela, pour des valeurs différentes 
+de la CBBU, on calcule le ratio:\\
+ $\frac{\max{Trafic_{i}}} {CBBU(pool)}$ 
+ \\tel que $Trafic_{i}$ est le trafic généré par le cluster \emph{i}. 
+Ce ratio permet d'evaluer la charge dans les clusters. Un ratio supérieur à 1 imaplique une surcharge; un ratio inférieur à 1 implique une sous-charge.
+ L'idéal est d'avoir une valeur proche à 1.\\
+ \begin{figure}[h]
+  \centering
+  \includegraphics[width=20em]{images/kmeans_vs_dcca.png}
+  \caption{Evaluation de la charge}
+\end{figure}\\
+La figure ci-dessus montre que le capacité de la BBU nécessaire pour atteindre un équilbre est inferieure dans le clustering DCCA 
+à celle de K-means. 
 \end{document}

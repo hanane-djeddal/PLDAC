@@ -37,4 +37,5 @@ def c(l):
         rep=rep+"i"
     print(i)
     return rep
-print(c([1,2,4,6,5,8]))
+print(ar,ar2d)
+print(sum(np.max(ar2d,axis=1)))

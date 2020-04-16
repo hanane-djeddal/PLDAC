@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.7)  16 APR 2020 01:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.7)  16 APR 2020 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -879,7 +879,7 @@ LaTeX Info: Redefining \nameref on input line 42.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<images/logo.png, id=64, 242.9075pt x 108.405pt>
+<images/logo.png, id=68, 242.9075pt x 108.405pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 45.
@@ -920,7 +920,7 @@ l.97 \chapter{Ã‰tat de l'art}
 l.97 \chapter{Ã‰tat de l'art}
                              
 ? 
-<images/D-RAN.jpg, id=106, 530.98375pt x 316.18124pt>
+<images/D-RAN.jpg, id=111, 530.98375pt x 316.18124pt>
 File: images/D-RAN.jpg Graphic file (type jpg)
 <use images/D-RAN.jpg>
 Package pdftex.def Info: images/D-RAN.jpg  used on input line 111.
@@ -940,7 +940,7 @@ e un prob-lème d'interférence
 [3
 
  <./images/D-RAN.jpg>]
-<images/C-RAN.jpg, id=114, 803.0pt x 351.3125pt>
+<images/C-RAN.jpg, id=119, 803.0pt x 351.3125pt>
 File: images/C-RAN.jpg Graphic file (type jpg)
 <use images/C-RAN.jpg>
 Package pdftex.def Info: images/C-RAN.jpg  used on input line 134.
@@ -950,7 +950,7 @@ Package pdftex.def Info: images/C-RAN.jpg  used on input line 134.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4] [5 <./images/C-RAN.jpg>]
-<images/k-means_lille.png, id=132, 373.395pt x 248.93pt>
+<images/k-means_lille.png, id=137, 373.395pt x 248.93pt>
 File: images/k-means_lille.png Graphic file (type png)
 <use images/k-means_lille.png>
 Package pdftex.def Info: images/k-means_lille.png  used on input line 157.
@@ -990,7 +990,7 @@ l.219 \end{tabularx}
                     
 ? 
 [9]
-<images/trafic.png, id=177, 493.845pt x 324.21124pt>
+<images/trafic.png, id=182, 493.845pt x 324.21124pt>
 File: images/trafic.png Graphic file (type png)
 <use images/trafic.png>
 Package pdftex.def Info: images/trafic.png  used on input line 231.
@@ -1057,7 +1057,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
-<images/voronoi-areas.png, id=207, 443.6575pt x 254.9525pt>
+<images/voronoi-areas.png, id=212, 443.6575pt x 254.9525pt>
 File: images/voronoi-areas.png Graphic file (type png)
 <use images/voronoi-areas.png>
 Package pdftex.def Info: images/voronoi-areas.png  used on input line 307.
@@ -1070,7 +1070,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--311
 [13
 
 ]
-<images/histogramme_rrh_dist.png, id=218, 851.18pt x 296.10625pt>
+<images/histogramme_rrh_dist.png, id=223, 851.18pt x 296.10625pt>
 File: images/histogramme_rrh_dist.png Graphic file (type png)
 <use images/histogramme_rrh_dist.png>
 Package pdftex.def Info: images/histogramme_rrh_dist.png  used on input line 31
@@ -1092,37 +1092,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--328
  []
 
 [14 <./images/voronoi-areas.png> <./images/histogramme_rrh_dist.png>]
-<images/byteUp1.png, id=230, 373.395pt x 276.03125pt>
+<images/byteUp1.png, id=235, 373.395pt x 276.03125pt>
 File: images/byteUp1.png Graphic file (type png)
 <use images/byteUp1.png>
 Package pdftex.def Info: images/byteUp1.png  used on input line 332.
 (pdftex.def)             Requested size: 186.69704pt x 138.01527pt.
-<images/byteUp2.png, id=231, 394.47375pt x 276.03125pt>
+<images/byteUp2.png, id=236, 394.47375pt x 276.03125pt>
 File: images/byteUp2.png Graphic file (type png)
 <use images/byteUp2.png>
 Package pdftex.def Info: images/byteUp2.png  used on input line 337.
 (pdftex.def)             Requested size: 197.23639pt x 138.01527pt.
-<images/byteDn1.png, id=232, 379.4175pt x 276.03125pt>
+<images/byteDn1.png, id=237, 379.4175pt x 276.03125pt>
 File: images/byteDn1.png Graphic file (type png)
 <use images/byteDn1.png>
 Package pdftex.def Info: images/byteDn1.png  used on input line 344.
 (pdftex.def)             Requested size: 189.70828pt x 138.01527pt.
-<images/byteDn2.png, id=233, 401.5pt x 276.03125pt>
+<images/byteDn2.png, id=238, 401.5pt x 276.03125pt>
 File: images/byteDn2.png Graphic file (type png)
 <use images/byteDn2.png>
 Package pdftex.def Info: images/byteDn2.png  used on input line 349.
 (pdftex.def)             Requested size: 200.7495pt x 138.01527pt.
-<images/byte1.png, id=234, 379.4175pt x 276.03125pt>
+<images/byte1.png, id=239, 379.4175pt x 276.03125pt>
 File: images/byte1.png Graphic file (type png)
 <use images/byte1.png>
 Package pdftex.def Info: images/byte1.png  used on input line 356.
 (pdftex.def)             Requested size: 189.70828pt x 138.01527pt.
-<images/byte2.png, id=235, 401.5pt x 276.03125pt>
+<images/byte2.png, id=240, 401.5pt x 276.03125pt>
 File: images/byte2.png Graphic file (type png)
 <use images/byte2.png>
 Package pdftex.def Info: images/byte2.png  used on input line 361.
 (pdftex.def)             Requested size: 200.7495pt x 138.01527pt.
-<images/8_20.png, id=236, 416.55624pt x 286.06876pt>
+<images/8_20.png, id=241, 416.55624pt x 286.06876pt>
 File: images/8_20.png Graphic file (type png)
 <use images/8_20.png>
 Package pdftex.def Info: images/8_20.png  used on input line 372.
@@ -1132,7 +1132,7 @@ Overfull \hbox (40.29703pt too wide) in paragraph at lines 372--373
  [][] 
  []
 
-<images/8_31.png, id=237, 416.55624pt x 286.06876pt>
+<images/8_31.png, id=242, 416.55624pt x 286.06876pt>
 File: images/8_31.png Graphic file (type png)
 <use images/8_31.png>
 Package pdftex.def Info: images/8_31.png  used on input line 377.
@@ -1142,7 +1142,7 @@ Overfull \hbox (40.29703pt too wide) in paragraph at lines 377--378
  [][] 
  []
 
-<images/12_20.png, id=238, 416.55624pt x 286.06876pt>
+<images/12_20.png, id=243, 416.55624pt x 286.06876pt>
 File: images/12_20.png Graphic file (type png)
 <use images/12_20.png>
 Package pdftex.def Info: images/12_20.png  used on input line 384.
@@ -1152,7 +1152,7 @@ Overfull \hbox (40.29703pt too wide) in paragraph at lines 384--385
  [][] 
  []
 
-<images/12_31.png, id=239, 416.55624pt x 286.06876pt>
+<images/12_31.png, id=244, 416.55624pt x 286.06876pt>
 File: images/12_31.png Graphic file (type png)
 <use images/12_31.png>
 Package pdftex.def Info: images/12_31.png  used on input line 389.
@@ -1162,7 +1162,7 @@ Overfull \hbox (40.29703pt too wide) in paragraph at lines 389--390
  [][] 
  []
 
-<images/23_20.png, id=240, 416.55624pt x 286.06876pt>
+<images/23_20.png, id=245, 416.55624pt x 286.06876pt>
 File: images/23_20.png Graphic file (type png)
 <use images/23_20.png>
 Package pdftex.def Info: images/23_20.png  used on input line 396.
@@ -1172,7 +1172,7 @@ Overfull \hbox (40.29703pt too wide) in paragraph at lines 396--397
  [][] 
  []
 
-<images/23_31.png, id=241, 416.55624pt x 286.06876pt>
+<images/23_31.png, id=246, 416.55624pt x 286.06876pt>
 File: images/23_31.png Graphic file (type png)
 <use images/23_31.png>
 Package pdftex.def Info: images/23_31.png  used on input line 401.
@@ -1189,7 +1189,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 366--405
 
 [15 <./images/byteUp1.png> <./images/byteUp2.png> <./images/byteDn1.png> <./ima
 ges/byteDn2.png> <./images/byte1.png> <./images/byte2.png>]
-<images/te.png, id=255, 416.55624pt x 286.06876pt>
+<images/te.png, id=260, 416.55624pt x 286.06876pt>
 File: images/te.png Graphic file (type png)
 <use images/te.png>
 Package pdftex.def Info: images/te.png  used on input line 411.
@@ -1204,7 +1204,7 @@ Underfull \hbox (badness 4531) in paragraph at lines 412--412
 []\T1/cmr/m/n/10 Figure 2.15: |Ré-gions avec un trafic
  []
 
-<images/tr.png, id=256, 416.55624pt x 286.06876pt>
+<images/tr.png, id=261, 416.55624pt x 286.06876pt>
 File: images/tr.png Graphic file (type png)
 <use images/tr.png>
 Package pdftex.def Info: images/tr.png  used on input line 416.
@@ -1221,7 +1221,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 406--419
 
 [16 <./images/8_20.png> <./images/8_31.png> <./images/12_20.png> <./images/12_3
 1.png> <./images/23_20.png> <./images/23_31.png>]
-<images/var2.png, id=270, 416.55624pt x 286.06876pt>
+<images/var2.png, id=275, 416.55624pt x 286.06876pt>
 File: images/var2.png Graphic file (type png)
 <use images/var2.png>
 Package pdftex.def Info: images/var2.png  used on input line 424.
@@ -1231,7 +1231,7 @@ Overfull \hbox (40.29703pt too wide) in paragraph at lines 424--425
  [][] 
  []
 
-<images/var1.png, id=271, 424.58624pt x 286.06876pt>
+<images/var1.png, id=276, 424.58624pt x 286.06876pt>
 File: images/var1.png Graphic file (type png)
 <use images/var1.png>
 Package pdftex.def Info: images/var1.png  used on input line 429.
@@ -1241,7 +1241,7 @@ Overfull \hbox (44.71355pt too wide) in paragraph at lines 429--430
  [][] 
  []
 
-<images/correl.png, id=272, 416.55624pt x 286.06876pt>
+<images/correl.png, id=277, 416.55624pt x 286.06876pt>
 File: images/correl.png Graphic file (type png)
 <use images/correl.png>
 Package pdftex.def Info: images/correl.png  used on input line 438.
@@ -1263,7 +1263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 442--443
 
  []
 
-<images/reg_sel.png, id=283, 401.5pt x 278.03876pt>
+<images/reg_sel.png, id=288, 401.5pt x 278.03876pt>
 File: images/reg_sel.png Graphic file (type png)
 <use images/reg_sel.png>
 Package pdftex.def Info: images/reg_sel.png  used on input line 454.
@@ -1273,7 +1273,7 @@ Overfull \hbox (32.01607pt too wide) in paragraph at lines 454--455
  [][] 
  []
 
-<images/reg_comp.png, id=284, 401.5pt x 278.03876pt>
+<images/reg_comp.png, id=289, 401.5pt x 278.03876pt>
 File: images/reg_comp.png Graphic file (type png)
 <use images/reg_comp.png>
 Package pdftex.def Info: images/reg_comp.png  used on input line 459.
@@ -1304,7 +1304,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 444--462
  []
 
 [18 <./images/correl.png>]
-<images/ecartBBU.png, id=292, 370.38374pt x 268.00125pt>
+<images/ecartBBU.png, id=297, 370.38374pt x 268.00125pt>
 File: images/ecartBBU.png Graphic file (type png)
 <use images/ecartBBU.png>
 Package pdftex.def Info: images/ecartBBU.png  used on input line 474.
@@ -1320,12 +1320,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 487--490
  []
 
 [20 <./images/ecartBBU.png>]
-<images/k-means_paris10.png, id=309, 471.7625pt x 333.245pt>
+<images/k-means_paris10.png, id=314, 471.7625pt x 333.245pt>
 File: images/k-means_paris10.png Graphic file (type png)
 <use images/k-means_paris10.png>
 Package pdftex.def Info: images/k-means_paris10.png  used on input line 503.
 (pdftex.def)             Requested size: 188.70164pt x 133.29562pt.
-<images/k-means_paris20.png, id=310, 468.75125pt x 330.23375pt>
+<images/k-means_paris20.png, id=315, 468.75125pt x 330.23375pt>
 File: images/k-means_paris20.png Graphic file (type png)
 <use images/k-means_paris20.png>
 Package pdftex.def Info: images/k-means_paris20.png  used on input line 508.
@@ -1334,17 +1334,17 @@ File: images/k-means_lille.png Graphic file (type png)
 <use images/k-means_lille.png>
 Package pdftex.def Info: images/k-means_lille.png  used on input line 515.
 (pdftex.def)             Requested size: 186.69704pt x 124.46469pt.
-<images/k-means_lyon.png, id=311, 470.75874pt x 323.2075pt>
+<images/k-means_lyon.png, id=316, 470.75874pt x 323.2075pt>
 File: images/k-means_lyon.png Graphic file (type png)
 <use images/k-means_lyon.png>
 Package pdftex.def Info: images/k-means_lyon.png  used on input line 520.
 (pdftex.def)             Requested size: 188.30016pt x 129.2807pt.
-<images/k-means_nantes.png, id=312, 469.755pt x 312.16624pt>
+<images/k-means_nantes.png, id=317, 469.755pt x 312.16624pt>
 File: images/k-means_nantes.png Graphic file (type png)
 <use images/k-means_nantes.png>
 Package pdftex.def Info: images/k-means_nantes.png  used on input line 526.
 (pdftex.def)             Requested size: 187.89867pt x 124.86427pt.
-<images/dendogramme.png, id=313, 1007.765pt x 506.89375pt>
+<images/dendogramme.png, id=318, 1007.765pt x 506.89375pt>
 File: images/dendogramme.png Graphic file (type png)
 <use images/dendogramme.png>
 Package pdftex.def Info: images/dendogramme.png  used on input line 536.
@@ -1352,7 +1352,7 @@ Package pdftex.def Info: images/dendogramme.png  used on input line 536.
  [21 <./images/k-means_paris10.png (PNG copy)> <./images/k-means_paris20.png (P
 NG copy)> <./images/k-means_lyon.png (PNG copy)> <./images/k-means_nantes.png (
 PNG copy)>]
-<images/To01.png, id=323, 414.54875pt x 283.0575pt>
+<images/To01.png, id=329, 414.54875pt x 283.0575pt>
 File: images/To01.png Graphic file (type png)
 <use images/To01.png>
 Package pdftex.def Info: images/To01.png  used on input line 555.
@@ -1362,7 +1362,7 @@ Overfull \hbox (39.1929pt too wide) in paragraph at lines 555--556
  [][] 
  []
 
-<images/To02.png, id=324, 410.53375pt x 286.06876pt>
+<images/To02.png, id=330, 410.53375pt x 286.06876pt>
 File: images/To02.png Graphic file (type png)
 <use images/To02.png>
 Package pdftex.def Info: images/To02.png  used on input line 560.
@@ -1373,7 +1373,7 @@ Overfull \hbox (36.98465pt too wide) in paragraph at lines 560--561
  []
 
 [22 <./images/dendogramme.png>]
-<images/To03.png, id=334, 410.53375pt x 283.0575pt>
+<images/To03.png, id=339, 410.53375pt x 283.0575pt>
 File: images/To03.png Graphic file (type png)
 <use images/To03.png>
 Package pdftex.def Info: images/To03.png  used on input line 567.
@@ -1383,7 +1383,7 @@ Overfull \hbox (36.98465pt too wide) in paragraph at lines 567--568
  [][] 
  []
 
-<images/To04.png, id=335, 410.53375pt x 289.08pt>
+<images/To04.png, id=340, 410.53375pt x 289.08pt>
 File: images/To04.png Graphic file (type png)
 <use images/To04.png>
 Package pdftex.def Info: images/To04.png  used on input line 572.
@@ -1393,7 +1393,7 @@ Overfull \hbox (36.98465pt too wide) in paragraph at lines 572--573
  [][] 
  []
 
-<images/To05.png, id=336, 409.53pt x 281.05pt>
+<images/To05.png, id=341, 409.53pt x 281.05pt>
 File: images/To05.png Graphic file (type png)
 <use images/To05.png>
 Package pdftex.def Info: images/To05.png  used on input line 579.
@@ -1403,7 +1403,7 @@ Overfull \hbox (36.43259pt too wide) in paragraph at lines 579--580
  [][] 
  []
 
-<images/To06.png, id=337, 410.53375pt x 286.06876pt>
+<images/To06.png, id=342, 410.53375pt x 286.06876pt>
 File: images/To06.png Graphic file (type png)
 <use images/To06.png>
 Package pdftex.def Info: images/To06.png  used on input line 584.
@@ -1413,7 +1413,7 @@ Overfull \hbox (36.98465pt too wide) in paragraph at lines 584--585
  [][] 
  []
 
-<images/To09.png, id=338, 412.54124pt x 284.06125pt>
+<images/To09.png, id=343, 412.54124pt x 284.06125pt>
 File: images/To09.png Graphic file (type png)
 <use images/To09.png>
 Package pdftex.def Info: images/To09.png  used on input line 591.
@@ -1423,7 +1423,7 @@ Overfull \hbox (38.08878pt too wide) in paragraph at lines 591--592
  [][] 
  []
 
-<images/To1.png, id=339, 414.54875pt x 282.05376pt>
+<images/To1.png, id=344, 414.54875pt x 282.05376pt>
 File: images/To1.png Graphic file (type png)
 <use images/To1.png>
 Package pdftex.def Info: images/To1.png  used on input line 596.
@@ -1439,14 +1439,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 602--604
 
  []
 
-<images/ecartCBBU0320.png, id=347, 384.43625pt x 261.97874pt>
+<images/ecartCBBU0320.png, id=352, 384.43625pt x 261.97874pt>
 File: images/ecartCBBU0320.png Graphic file (type png)
 <use images/ecartCBBU0320.png>
 Package pdftex.def Info: images/ecartCBBU0320.png  used on input line 608.
 (pdftex.def)             Requested size: 199.95117pt x 136.2617pt.
 [24 <./images/To05.png (PNG copy)> <./images/To06.png (PNG copy)> <./images/To0
 9.png (PNG copy)> <./images/To1.png (PNG copy)>]
-<images/S00_8.png, id=356, 419.5675pt x 285.065pt>
+<images/S00_8.png, id=361, 419.5675pt x 285.065pt>
 File: images/S00_8.png Graphic file (type png)
 <use images/S00_8.png>
 Package pdftex.def Info: images/S00_8.png  used on input line 619.
@@ -1456,7 +1456,7 @@ Overfull \hbox (41.95323pt too wide) in paragraph at lines 619--620
  [][] 
  []
 
-<images/W00_8.png, id=357, 414.54875pt x 288.07625pt>
+<images/W00_8.png, id=362, 414.54875pt x 288.07625pt>
 File: images/W00_8.png Graphic file (type png)
 <use images/W00_8.png>
 Package pdftex.def Info: images/W00_8.png  used on input line 624.
@@ -1477,7 +1477,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 614--627
 
  []
 
-<images/S8_12.png, id=358, 419.5675pt x 282.05376pt>
+<images/S8_12.png, id=363, 419.5675pt x 282.05376pt>
 File: images/S8_12.png Graphic file (type png)
 <use images/S8_12.png>
 Package pdftex.def Info: images/S8_12.png  used on input line 631.
@@ -1487,7 +1487,7 @@ Overfull \hbox (41.95323pt too wide) in paragraph at lines 631--632
  [][] 
  []
 
-<images/W8_12.png, id=359, 423.5825pt x 277.035pt>
+<images/W8_12.png, id=364, 423.5825pt x 277.035pt>
 File: images/W8_12.png Graphic file (type png)
 <use images/W8_12.png>
 Package pdftex.def Info: images/W8_12.png  used on input line 636.
@@ -1497,7 +1497,7 @@ Overfull \hbox (44.16148pt too wide) in paragraph at lines 636--637
  [][] 
  []
 
-<images/S12_16.png, id=360, 420.57124pt x 277.035pt>
+<images/S12_16.png, id=365, 420.57124pt x 277.035pt>
 File: images/S12_16.png Graphic file (type png)
 <use images/S12_16.png>
 Package pdftex.def Info: images/S12_16.png  used on input line 643.
@@ -1507,7 +1507,7 @@ Overfull \hbox (42.5053pt too wide) in paragraph at lines 643--644
  [][] 
  []
 
-<images/W12_16.png, id=361, 414.54875pt x 287.0725pt>
+<images/W12_16.png, id=366, 414.54875pt x 287.0725pt>
 File: images/W12_16.png Graphic file (type png)
 <use images/W12_16.png>
 Package pdftex.def Info: images/W12_16.png  used on input line 648.
@@ -1519,7 +1519,7 @@ Overfull \hbox (39.1929pt too wide) in paragraph at lines 648--649
 
 [25 <./images/ecartCBBU0320.png> <./images/S00_8.png (PNG copy)> <./images/W00_
 8.png (PNG copy)>]
-<images/S16_23.png, id=370, 406.51875pt x 296.10625pt>
+<images/S16_23.png, id=375, 406.51875pt x 296.10625pt>
 File: images/S16_23.png Graphic file (type png)
 <use images/S16_23.png>
 Package pdftex.def Info: images/S16_23.png  used on input line 655.
@@ -1529,7 +1529,7 @@ Overfull \hbox (34.7764pt too wide) in paragraph at lines 655--656
  [][] 
  []
 
-<images/W16_23.png, id=371, 414.54875pt x 274.02374pt>
+<images/W16_23.png, id=376, 414.54875pt x 274.02374pt>
 File: images/W16_23.png Graphic file (type png)
 <use images/W16_23.png>
 Package pdftex.def Info: images/W16_23.png  used on input line 660.
@@ -1546,58 +1546,66 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.664 \end
-          {document}
+l.664 
+      
 ? 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 664.
+<images/kmeans_vs_dcca.png, id=377, 384.43625pt x 258.9675pt>
+File: images/kmeans_vs_dcca.png Graphic file (type png)
+<use images/kmeans_vs_dcca.png>
+Package pdftex.def Info: images/kmeans_vs_dcca.png  used on input line 682.
+(pdftex.def)             Requested size: 199.95117pt x 134.69547pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 687.
 [26 <./images/S8_12.png (PNG copy)> <./images/W8_12.png (PNG copy)> <./images/S
 12_16.png (PNG copy)> <./images/W12_16.png (PNG copy)> <./images/S16_23.png (PN
-G copy)> <./images/W16_23.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 664.
+G copy)> <./images/W16_23.png (PNG copy)>] [27 <./images/kmeans_vs_dcca.png (PN
+G copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 687.
  (./rapport_pldac_V5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 664.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 664.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 687.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 687.
 Package rerunfilecheck Info: File `rapport_pldac_V5.out' has not changed.
-(rerunfilecheck)             Checksum: E78FD35BCC0165E96515823ABC6A0E14;1066.
+(rerunfilecheck)             Checksum: 25A83E0BFB4054E925B1B993585DD8CC;1128.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 664.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 687.
  ) 
 Here is how much of TeX's memory you used:
- 8621 strings out of 494923
- 125210 string characters out of 6180742
+ 8632 strings out of 494923
+ 125419 string characters out of 6180742
  208526 words of memory out of 5000000
- 11646 multiletter control sequences out of 15000+600000
- 17973 words of font info for 43 fonts, out of 8000000 for 9000
+ 11652 multiletter control sequences out of 15000+600000
+ 18660 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,13n,39p,805b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000
+ </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1440
 .600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
-x1200.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecbx2488.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/jknap
-pen/ec/ecrm1000.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/
-jknappen/ec/ecbx1440.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/lj
-four/jknappen/ec/ecrm1440.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/
-pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/h_djeddal/.texlive2017/texmf-var/f
-onts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/h_djeddal/.texlive2017/texmf-
-var/fonts/pk/ljfour/jknappen/ec/eccc2488.600pk> </home/h_djeddal/.texlive2017/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/eccc2074.600pk> </home/h_djeddal/.texlive2
-017/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1728.600pk></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on rapport_pldac_V5.pdf (27 pages, 1960963 bytes).
+x1000.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecbx1200.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/ecbx2488.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/
+jknappen/ec/ecrm1000.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/lj
+four/jknappen/ec/ecbx1440.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/
+pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/h_djeddal/.texlive2017/texmf-var/f
+onts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/h_djeddal/.texlive2017/texmf-
+var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/h_djeddal/.texlive2017/t
+exmf-var/fonts/pk/ljfour/jknappen/ec/eccc2488.600pk> </home/h_djeddal/.texlive2
+017/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc2074.600pk> </home/h_djeddal/.tex
+live2017/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1728.600pk></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+>
+Output written on rapport_pldac_V5.pdf (28 pages, 1984136 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
- 356 compressed objects within 4 object streams
- 130 named destinations out of 1000 (max. 500000)
- 366 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 842 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 133 named destinations out of 1000 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 
