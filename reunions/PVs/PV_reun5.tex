@@ -1,0 +1,56 @@
+% pour genree un pdf: faire
+% pdflatex exemple.tex
+\documentclass{article}
+
+%% Paquets LateX utiles
+
+\usepackage[utf8]{inputenc} 		% encodage des caracteres utilise (pour les caracteres accentues) -- non utilise ici.
+%\usepackage[latin1]{inputenc} 		% autre encodage
+\usepackage[french]{babel}		% pour une mise en forme "francaise"
+\usepackage{amsmath,amssymb,amsthm}	% pour les maths
+\usepackage{graphicx}			% pour inclure des graphiques
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}			% pour ajouter des couleurs dans vos textes
+\usepackage{geometry}
+\geometry{hmargin=2.5cm,vmargin=3cm}
+\renewcommand{\contentsname}{\centering Contents}
+
+
+\begin{document}
+    \begin{flushleft}
+    \includegraphics[width=11em]{logo.png}\\
+    \begin{center}
+        \textsc{{\color{blue} Master Données, Apprentissage et Connaissances-DAC}}\\[0.75cm]
+    \end{center}
+    \end{flushleft}
+    \begin{center}
+        \textsc{\Huge{PV DE RÉUNION}}\\[0.75cm]
+    \end{center}
+    \textbf{\Large\underline{Projet:}}
+    \textsc{\large{Problème de clustering pour les infrastructures sans fil.}}\\[0.75cm]
+    \textsc{\Large\underline{Date:}} \large{ Vendredi 17 avril 2020.}} \\
+    \textsc{\Large\underline{Début de la séance:}} \large{ 10:30.}} \\
+    \textsc{\Large\underline{Levée de la séance:}} \large{ 12:30.}} \\
+    \textsc{\Large\underline{Étaient présents:}} \large{\\ DJEDDAL Hanane. \\ TOUZARI Liticia.}} \\
+    \textsc{\Large\underline{Rapporteur:}} \large{ Djeddal Hanane.}} \\[0.5cm]
+    \textbf{\Large\underline{Ordre du jour:}}\\
+    \textsc{\large{- Présentation de l'avancement du rapport.\\
+    - Retour sur la valeur de la capacité de la BBU. \\
+    - Evaluation de la valeur du $\tau$ et discussion de la contrainte de distance dans DCCA.\\
+    - Determiner les mesures d'evaluation des algorithmes : gain en multiplexage statique et la surcharge de la BBU. }} \\[0.25cm]
+    \textbf{\Large\underline{À préparer pour la prochaine séance:}}\\
+    \textsc{\large{
+    - Mettre à jour et réctifier le rapport. \\
+    - Bien définir la capacité de la BBU par RRH et la capacité de la BBU du pool.\\
+    - Uniformer la normalisation : Normaliser selon une valeur max/min générale pour tous les jours. \\
+    - Evaluer les résultats du clsutering selon les mesure définis. \\
+    - Comparaison entre le clustering K-means et DCCA par rapport aux : Gain en multiplexage statique et la surcharge de la BBU en fonction de K.\\ }}\\[0.25cm]
+    \textbf{\Large\underline{Date de la prochaine réunion:}}
+    \textsc{\large{Vendredi 24 avril 2020.}}
+
+
+
+\end{document}
+
+

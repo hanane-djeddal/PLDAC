@@ -237,9 +237,9 @@ def print_p(P):
             print(r.id)
         
     
-def normalize_trafic(F):
-    lemax=np.max(F)
-    lemin=np.min(F)
+def normalize_trafic(F,lemax,lemin):
+    #lemax=np.max(F)
+    #lemin=np.min(F)
     F_norm=(F-lemin)/(lemax-lemin)
     return F_norm
 
