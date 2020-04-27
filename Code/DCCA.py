@@ -140,15 +140,15 @@ def DCCA(r,F,B,max_iter,taux,W):
     for rrh in r:
         P.append([rrh])
         labels.append(rrh.pos)
-    #indices=[i for i in range(len(r))]
+    indices=[i for i in range(len(r))]
     #step2 : itere & cluster
     fin=False
     it=0
     while (not fin):
         it+=1
         change=False
-        #random.shuffle(indices)
-        for i in range(len(r)):
+        random.shuffle(indices)
+        for i in indices:
             rrh=r[i]
             maxvalue=0
             newC=[]

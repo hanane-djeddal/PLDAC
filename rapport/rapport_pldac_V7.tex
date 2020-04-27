@@ -32,6 +32,8 @@
 \usepackage{geometry}
 \usepackage{tabularx}
 \usepackage{caption}
+\usepackage{array}
+\usepackage{multirow}
 \setlength\abovecaptionskip{0pt}
 \geometry{hmargin=2.5cm,vmargin=3cm}
 \renewcommand{\contentsname}{\centering Contents}
@@ -402,22 +404,39 @@ Les figures ci-dessous représente pour des périodes et jours différents le tr
      \caption{Weekend }\label{Fig:Data2}
    \end{minipage}
 \end{figure} 
-
-\textbf{Les régions à trafic élevé }\\
-On considère les régions qui atteignent un trafic supérieur à la moyenne du trafic en général comme étant des régions à trafic élevé, la figure qui suit sépare les régions de Lille en régions à trafic élevé et régions à trafic réduit, on obtient pratiquement les même régions avec un seuil de deux fois la moyenne du trafic pour les régions à trafic élevé et un seuil d'un demi de la moyenne du trafic pour les régions à trafic réduit:\\
+\vspace*{\stretch{0.5}}
+\textbf{Les régions à trafic élevé }
+\paragraph{}
+On considère les régions qui atteignent un trafic supérieur à la moyenne du trafic en général comme étant des régions à trafic élevé.
+Pour récupérer les régions à trafic élevé, on récupère pour une heure donnée la moyenne des trafics des rrhs sur toutes les journées disponibles.
+La figure qui suit sépare les régions de Lille en régions à trafic élevé et régions à trafic réduit, on obtient pratiquement les même régions avec un seuil de deux fois la moyenne du trafic pour les régions à trafic élevé et un seuil d'un demi de la moyenne du trafic pour les régions à trafic réduit:\\
 \begin{figure}[H]
    \begin{minipage}{0.4\textwidth}
      \centering
      \includegraphics[scale=0.55]{images/te.png}
-     \caption{Régions avec un trafic supérieur à la moyenne}\label{Fig:Data1}
+     \caption{Régions avec un trafic supérieur à la moyenne, heure=12:00}\label{Fig:Data1}
    \end{minipage}\hfill
    \begin{minipage}{0.4\textwidth}
      \centering
      \includegraphics[scale=0.55]{images/tr.png}
-     \caption{Régions avec un trafic inférieur à la moyenne}\label{Fig:Data2}
-   \end{minipage}
+     \caption{Régions avec un trafic inférieur à la moyenne, heure=12:00}\label{Fig:Data2}
+   \end{minipage}   
 \end{figure} 
-On remarque que les régions à trafic élevé correspondent plus ou moins aux régions dont le trafic varie le plus.
+
+\begin{figure}[H]
+   \begin{minipage}{0.4\textwidth}
+     \centering
+     \includegraphics[scale=0.55]{images/te2.png}
+     \caption{Régions avec un trafic supérieur à la moyenne, heure=08:00}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}{0.4\textwidth}
+     \centering
+     \includegraphics[scale=0.55]{images/tr2.png}
+     \caption{Régions avec un trafic inférieur à la moyenne, heure=08:00}\label{Fig:Data2}
+   \end{minipage}   
+\end{figure} 
+
+Pour extraire les régions dont le trafic varie le plus, il suffit de comparer la moyenne du trafic des rrhs entres deux périodes différentes. La figure qui suit illustre cette différence de trafic entre la matinée et l'après midi.
 \begin{figure}[H]
    \begin{minipage}{0.4\textwidth}
      \centering
@@ -427,19 +446,26 @@ On remarque que les régions à trafic élevé correspondent plus ou moins aux r
    \begin{minipage}{0.4\textwidth}
      \centering
      \includegraphics[scale=0.55]{images/var1.png}
-     \caption{Les régions avec très forte variation écart de plus de 500 millions de bytes entre périodes différentes }\label{Fig:Data2}
+     \caption{Les régions avec très forte variation écart de plus de 100 millions de bytes entre périodes différentes }\label{Fig:Data2}
    \end{minipage}
 \end{figure} 
 
 \textbf{Corrélation des deux types de trafic: }\\
-La corrélation générale en concaténant  pour tous les RRHs les deux trafic donne une valeur de 0.7228, qui correspond à une forte corrélation. Cependant, l'étude de chaque RRHs révèle des corrélations qui varient. La figure ci-dessous représente les régions dont les trafics up et down sont très corrélés (corrélation supérieure à 0.5), dont la plupart font parti des régions à trafic élevé.
+La corrélation générale en concaténant pour tous les RRHs les deux trafics du mars au juin 2019 donne une valeur de 0.7228, qui correspond à une forte corrélation. Cependant, l'étude de chaque RRHs révèle des corrélations qui varient. La figure ci-dessous représente les régions dont les trafics up et down sont très corrélés (corrélation supérieure à 0.5), dont la plupart font parti des régions à trafic élevé.
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=25em]{images/correl.png}
-  \caption{Régions à forte corrélation entre byte up et down }
-\end{figure} \\
+   \begin{minipage}{0.4\textwidth}
+     \centering
+     \includegraphics[scale=0.55]{images/correl.png}
+     \caption{Corrélation entre byte up et down }\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}{0.4\textwidth}
+     \centering
+     \includegraphics[scale=0.55]{images/correl2.png}
+     \caption{Régions à forte corrélation entre byte up et down  }\label{Fig:Data2}
+   \end{minipage}
+\end{figure} 
 
-La plupart des régions à forte corrélation représentent des régions à trafic élevé.\\
+La plupart des régions à forte corrélation correspondent des régions à trafic élevé.\\
 
 \textbf{Capacité de la BBU: }\\
 Pour determiner la capacité de la BBU, on peut suivre deux approche.\\\\
@@ -545,7 +571,8 @@ de ses RRHs. En général, les RRHs situés au même région ont des schémas du
 On applique DCCA sur le trafic downlink de la ville Lille avec des TimeSlots d'une heure. Pourcela on considère la moyenne du trafic par heure.
 Dans un premier temps, on applique le DCCA sur les 24 TimeSlots, c'est-à-dire on fait un seul clustering par jour. Cela va servir à determiner
 une valeur optimale de $\tau$. Dans un deuxième temps, on considère des tranches du temps et on obtient un clustering par tranche. 
-À la fin, on compare les clusters durant un jour de semaine et durant le weekend.
+À la fin, on compare les clusters durant un jour de semaine et durant le weekend.\\
+Le trafic est normalisé par rapport à la valeur maximale du trafic enregistré pour les jours en question.
 \subsubsection{DCCA avec 24 TimeSlots}
 On applique DCCA sur les 24 TimeSlots et on varie la valeur de $\tau$ en fixant la capacité de la BBU à 10 unités.\\
 Les figures suivantes montrent les clusters générés pour chaque valeurs de $\tau$ :
@@ -599,10 +626,39 @@ Les figures suivantes montrent les clusters générés pour chaque valeurs de $\
 \end{figure}
 
 
-En augmentant la valeur de $\tau$, on relache la contrainte sur la distance se qui parmet d'avoir plus de RRHs dans un seul cluster. 
-Pour avoir un nombre accepltable de clusters et pour une meilleure visualisation, on fixe $\tau$ à 0.25 pour la suite de cette section.\\
+En augmentant la valeur de $\tau$, on relache la contrainte sur la distance se qui parmet d'avoir plus de RRHs dans un seul cluster.
+On trace par la suite le gain en multiplexage statique, l'utilité maximale de la BBU, la souscharge et la surcharge en fonction de $\tau$ : 
+\begin{figure}[H]
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.55]{images/gain_to.png}
+    \caption{Gain en Multiplexage statique}\label{Fig:Data1}
+  \end{minipage}\hfill
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.55]{images/utilitemax_to.png}
+    \caption{Utilité maximale de la BBU}\label{Fig:Data2}
+  \end{minipage}
+\end{figure} 
+\begin{figure}[H]
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.55]{images/souscharge_to.png}
+    \caption{Souscharge maximale de la BBU}\label{Fig:Data1}
+  \end{minipage}\hfill
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.55]{images/surcharge_to.png}
+    \caption{Surcharge maximale de la BBU}\label{Fig:Data2}
+  \end{minipage}
+\end{figure}
+
+Le gain en multiplexage statique augmente avec la valeur de $\tau$ car le nombre de clusters necéssaires diminue, mais cela entraine 
+une surcharge à partir des valeurs de $\tau$ supérieur à 0.6.\\
+Dans la suite de cette partie, pour améliorer l'utilité et diminuer la souscharge/surcharge de la BBU, on fixe $\tau$ à 0.45.  
+
 \paragraph{}
-Pour la Capacité de la BBU, en utilisant la deuxième méthode de la partie (2.1.2), on la fixe à CBBU = 8.
+Pour la Capacité de la BBU, en utilisant la deuxième méthode de la partie (2.1.2), on la fixe à CBBU = 4.
 \begin{figure}[H]
   \centering
   \includegraphics[width=20em]{images/ecartCBBU0320.png}
@@ -662,6 +718,50 @@ pour un jour de semaine et durant le weekend. \\
   \end{minipage}
 \end{figure}\\
 
+On compare, par la suite, les performances par rapport aux gain en multiplexage statique et la charge de la BBU.
+\begin{figure}[H]
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.55]{images/gain_semaine.png}
+    \caption{Jour de semaine}\label{Fig:Data1}
+  \end{minipage}\hfill
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.55]{images/gain_wd.png}
+    \caption{Weekend}\label{Fig:Data2}
+  \end{minipage}
+\end{figure} 
+\begin{figure}[H]
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.55]{images/utilitemax_semaine.png}
+    \caption{Jour de semaine}\label{Fig:Data1}
+  \end{minipage}\hfill
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.55]{images/utilitemax_wd.png}
+    \caption{Weekend}\label{Fig:Data2}
+  \end{minipage}
+\end{figure} 
+\begin{figure}[H]
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.55]{images/souscharge_semaine.png}
+    \caption{Jour de semaine}\label{Fig:Data1}
+  \end{minipage}\hfill
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.55]{images/souscharge_wd.png}
+    \caption{Weekend}\label{Fig:Data2}
+  \end{minipage}
+\end{figure} \\
+
+L'algorithme retourne un gain au tour de 1.5 pour les jours de semaine aisni que les weekend. Ce gain est maximal le matin
+pour les jours de semaine, et durant l'après-midi pour les weekends. Quant à la capacité de la BBU, durant la semaine, elle est utilisé jusqu'à un maximum de 93\% 
+atteint aux heures de travail et un minimum de 45\% les soirs. Le weekend, seulement 27\% de la capacité est utilisé. Pour les clusters 
+les moins chargés  15\% est utilisé.
+
+
 \section{K-means Vs DCCA}
 Après avoir appliqué les algorithmes DCCA et k-means sur les données de la ville de Lille, on compare leurs performances en terme d'utilité de la capacité de la BBU. 
 Pour cela, on calcule le gain en multiplexage statique :\\
@@ -676,6 +776,44 @@ de la CBBU, on calcule le ratio:\\
  $\frac{\max{Trafic_{i}}} {CBBU(pool)}$ 
  \\tel que $Trafic_{i}$ est le trafic généré par le cluster \emph{i}. 
 Ce ratio permet d'evaluer la charge dans les clusters. Un ratio supérieur à 1 imaplique une surcharge; un ratio inférieur à 1 implique une sous-charge.
+\\\\
+% copy with \usepackage{array}  \usepackage{multirow}
+date: 2019-05-23\\
+max trafic(2019-05-23 )=4136126528.6891913 \\
+valeurs réelles: valeurs normalisées*max trafic(2019-05-23 )\\
+cbbu=5\\\\
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+k & \multicolumn{3}{c|}{DCCA} & \multicolumn{3}{c|}{K-means}\\ 
+\cline{2-6} 
+        & gain & surcharge & sous-charge  & gain & surcharge & sous-charge  \\   
+\hline
+11 & 4.95 & 0 & 4.84 & 2.48 & 0 & 4.39 \\
+\hline
+12 & 3.86 & 0 & 4.77 & 1.84 & 0 & 4.39 \\
+\hline
+13 & 3.17 &  & 4.89 & 1.85 & 0 & 4.13\\
+\hline
+14 & 2.99 & 0 & 4.87 & 2.09 & 0 & 4.59\\
+\hline
+15 & 2.99 & 0 & 4.90 & 2.97 & 0 & 4.73 \\
+\hline
+\end{tabular}
+\\\\
+date: 2019-05-21\\
+max trafic(2019-05-21 )=4348229663.233719 \\
+valeurs réelles: valeurs normalisées*max trafic(2019-05-21 )\\
+cbbu=4\\\\
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+k & \multicolumn{3}{c|}{DCCA} & \multicolumn{3}{c|}{K-means}\\ 
+\cline{2-6} 
+        & gain & surcharge & sous-charge  & gain & surcharge & sous-charge  \\   
+\hline
+13 & 1.31 & 0.16 & 3.90 & 0.009 & 0 & 3.53 \\
+\hline
+\end{tabular}
+
  L'idéal est d'avoir une valeur proche à 1.\\
  \begin{figure}[h]
   \centering
