@@ -140,15 +140,15 @@ def DCCA(r,F,B,max_iter,taux,W):
     for rrh in r:
         P.append([rrh])
         labels.append(rrh.pos)
-    indices=[i for i in range(len(r))]
+    #indices=[i for i in range(len(r))]
     #step2 : itere & cluster
     fin=False
     it=0
     while (not fin):
         it+=1
         change=False
-        random.shuffle(indices)
-        for i in indices:
+        #random.shuffle(indices)
+        for i in range(len(r)):
             rrh=r[i]
             maxvalue=0
             newC=[]
@@ -185,7 +185,7 @@ def DCCA_ameliore(r,F,B,max_iter,taux,W):
         it+=1
         change=False
         random.shuffle(indices)
-        for i in indices:
+        for i in range(len(r)):
             rrh=r[i]
             maxvalue=0
             newC=[]
@@ -207,16 +207,36 @@ def DCCA_ameliore(r,F,B,max_iter,taux,W):
             fin=True
     return P,labels
 
+def compacite_cluster(C):
+    dmax=0
+    for i in range (len(C)):
+        for j in range (i+1,len(C)):
+            d=distance(C[i],C[j])
+            if (d > dmax):
+                dmax=d
+    return dmax
+def compacite_global(P):
+    s=0
+    for c in P:
+        comp=compacite_cluster(c)
+        s+=comp
+        #if (comp > cmax):
+         #   cmax=comp
+    return s
 def iterative_DCCA (r,F,B,max_iter,taux,iter_part):
     Popt=[]
     lopt=[]
-    compOpt=0
+    #compOpt=0
+    dmin=100000
     W=matriceComplementarite(r,B,taux)
     for i in range(iter_part):
         P,l=DCCA(r,F,B,max_iter,taux,W)
-        c=complemntarity_partition(P,W,taux,B)
-        if(c>compOpt):
-            compOpt=c
+        #c=complemntarity_partition(P,W,taux,B)
+        d=compacite_global(P)
+        if (d<dmin):
+            dmin=d
+        #if(c>compOpt):
+            #compOpt=c
             Popt=P
             lopt=l
     return Popt,lopt

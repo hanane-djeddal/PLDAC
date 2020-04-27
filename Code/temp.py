@@ -28,14 +28,6 @@ h=np.histogram(np.array(c))
 print(h)
 plt.hist(c,bins='auto')
 """
-def c(l):
-    rep="no"
-    for i in l:
-        if (i==6):
-            rep="yes"
-            break
-        rep=rep+"i"
-    print(i)
-    return rep
-print(ar,ar2d)
-print(sum(np.max(ar2d,axis=1)))
+ll=[[],[5,6],[]]
+ll.remove([])
+print(ll)
