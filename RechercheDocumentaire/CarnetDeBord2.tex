@@ -48,30 +48,18 @@
 
 \vspace*{\stretch{0.5}}
   \begin{center}
-\section*{\LARGE{Introduction}}
-  \end{center}
+    \section*{\LARGE{Introduction}}
+\end{center}
 \Large{\paragraph{}
-        Aujourd'hui, le trafic de données sur les réseaux mobiles connaît une croissance explosive à mesure que les smartphones et tablettes compatibles avec Internet deviennent de plus en plus populaires.\\
+      Aujourd'hui, le trafic de données sur les réseaux mobiles connaît une croissance explosive à mesure que les smartphones et tablettes compatibles avec Internet deviennent de plus en plus populaires.\\
 Afin de répondre à la demande croissante de trafic de données, les opérateurs de réseaux mobiles doivent augmenter leur capacité de traitement de données, comme le déploiement de plus de stations de base et l'ajout d'unités de traitement de données supplémentaires aux stations de base. \\
-Cependant, les dépenses en capital liées au déploiement de ces infrastructures de réseau deviennent de plus en plus élevées. 
- conséquent, l'optimisation des dépenses d'investissement et des dépenses d'exploitation tout en maintenant une qualité de
- service est devenue une nécessité pour les opérateurs de réseaux mobiles.
+Cependant, les dépenses en capital liées au déploiement de ces infrastructures de réseau deviennent de plus en plus élevées. Par conséquent, l'optimisation des dépenses d'investissement et des dépenses d'exploitation tout en maintenant une qualité de service est devenue une nécessité pour les opérateurs de réseaux mobiles.
 \paragraph{}
-Ce projet vise à mettre en œuvre des techniques de clustering afin de regrouper les ressources et infrastructures radio dans
- le but d'améliorer l'efficacité des services. 
-Chaque ville est desservie par plusieurs nœuds sans fil qui sont géographiquement séparés; chacun d'eux est responsable 
-d'une charge différente des appels vocaux, de la consommation multimédia et des messages provenant de différentes zones de 
-la ville dans la journée. 
-À ce jour, les différents nœuds d'accès  du réseau ne coopèrent pas, et chaque nœud est plutôt responsable de sa propre zone 
-géographique. Les architectures futures des réseaux proposent de regrouper plusieurs stations sans fil et les traiter comme 
-un ensemble avec un contrôleur commun, afin que les stations surchargées puissent être soutenues par des stations 
-sous-chargées. 
-\paragraph{}
-Dans le cadre de ce projet, on proposera des méthodes de clustering efficaces, adaptées aux spécificités de l'environnement sans fil et des métriques des services de télécommunication. On utilisera des données fournies par l'opérateur Orange.
+Ce projet vise à mettre en œuvre des techniques de clustering afin de regrouper les ressources et infrastructures radio dans le but d'améliorer l'efficacité des services. \\
+Dans ce cadre, on proposera des méthodes de clustering efficaces, adaptées aux spécificités de l'environnement sans fil et des métriques des services de télécommunication. On utilisera des données fournies par l'opérateur Orange.
 }
 \vspace*{\stretch{1}}
 \newpage
-
 \section{Travail attendu}
 \paragraph{}
  Le projet est divisé en une séquence de trois taches principales à réaliser : \\
@@ -84,7 +72,7 @@ Dans le cadre de ce projet, on proposera des méthodes de clustering efficaces, 
 \section{Mots clés retenus}
 \begin{flushleft}
 Le schéma ci-dessous représente les mots clés utilisés dans ce projet sous forme d'une carte heuristique :\\
-\includegraphics[width=38em]{schema.png}\\[1.5cm]
+\includegraphics[width=38em]{map.png}\\[1.5cm]
 \end{flushleft}
 \section{Descriptif de la recherche documentaire}
 \paragraph{}
@@ -97,13 +85,9 @@ Pour cela, on a utilisé des pages web telles que Wikipedia, Whatis.techtarget, 
 etc, ainsi que des vidéos YouTube pour avoir des définitions des termes, des exemples et des 
 explications simplifiées. Par la suite, on a adopté une recherche par mots clés sur google 
 scholar, ieeexplore.ieee.org et le moteur de recherche SUper, pour étudier les architectures 
-RAN existants et la migration vers le cloud-RAN. On a pu obtenir des ressources en ligne telles 
-que des thèses de recherches, des revues et des articles de journal. Apès avoir une compréhension globale de l'architecture C-RAN, 
-il était necéssaire de savoir comment des différents concept sont traités dans le cardre de cette nouvelle technologie tels que:  
-l'interférence, la capacité des unités de traitement ainsi que les contraintes géographiques entre les différents site, 
-ainsi une recherche plus specifique, en combinant les différents mots clés permettait d'avoir des articles qui traitent 
-les sujets désirés. En suivant les références cités dans les différents articles trouvés, on est arrivé sur des thèmes d'ouverture 
-qui inclut les améliorations possible pour les technologies 5G.\\
+RAN existants et la migration vers le cloud-RAN. On a pu obtenir des ressources telles 
+que des thèses de recherches, des revues et des articles de journal qui étaient disponibles en ligne sur Google scholar, 
+Web of science et les sites officiels des e-magazines (tel que Heavy Reading de Huawei).
 Pour la deuxième partie, l’étude sur les algorithmes de clustering général était basée sur le chapitre 10.3 du livre 
 “An introduction to Statistical Learning” et le cours “NDA: Clustering” fourni par notre encadrant; ainsi que les cours de 
 l'UE: sciences des données de licence 3 informatique. Ensuite, en suivant la même approche que la première partie, on a 
@@ -129,16 +113,17 @@ DOI: https://doi.org/10.1016/j.jnca.2018.07.015.
 \begin{itemize}
   \item [{[4]}] Recent Progress on C-RAN Centralization and Cloudification :
   \paragraph{}
+
   Cet article, fourni par notre encadrant, date de 2014, 4 ans après l'introduction 
   de l'architecture C-RAN par China Mobile Research Institute (CMRI). Il donne les 
   derniers progrès dans cette technologie ainsi que les choix d’implémentations et 
   les améliorations possibles. Parmi les auteurs de cet article : la chargée de la 
-  recherche et développement des réseaux sans fils avancées de CRMI , ainsi que 2 chefs 
+  recherche et développement des réseaux sans fils avancées de CMRI , ainsi que 2 chefs 
   de projets à CMRI et le directeur de The Green Communications Research Center de CMRI. 
   Le projet étant basé sur le clustering dans les architectures C-RAN, une bonne compréhension 
   de la technologie était un point crucial, et donc cet article, le travail direct d’une équipe 
-  de l'Institut où la technologie a émergé, était une source importante pour guider la recherche.\\
-  
+  de l'Institut où la technologie a émergé, était une source importante pour guider la recherche.
+  C'est aussi une source fiable, en effet, l'article est cité \\
   \item [{[8]}] Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges
   \paragraph{}
   En un niveau plus détaillé dans la recherche, il était essentiel de comprendre la communications 
@@ -151,7 +136,6 @@ DOI: https://doi.org/10.1016/j.jnca.2018.07.015.
    qui présente une étude expérimentale était le travail d'une équipe des chercheurs qui ont contribué au
    développement de la technologie LTE et qui viennent de différents groupes spécialisés en télécommunication tels que 
    Orange, Samsung Electronics, LG Electronics, Huawei technologies etc. Ce qui implique une très bonne fiabilité.\\
-  
    \item [{[12]}] An Enhanced Regularized k-Means Type Clustering Algorithm With Adaptive Weights:
    \paragraph{}
   Cet article, disponible sur IEEE digital Library et publié dans le journal IEEE Access en février 2020
@@ -162,16 +146,4 @@ DOI: https://doi.org/10.1016/j.jnca.2018.07.015.
    de l'article est, consistant, offrant des démonstrations mathématiques ainsi qu'une évaluation 
    expérimentale. Ses références étaient aussi vérifiables (accessibles en ligne et/ou sur google scholar).
 
-   \vspace*{\stretch{0.5}}
-   \begin{center}
- \section*{\LARGE{Conclusion}}
-   \end{center}
- \Large{\paragraph{}
- Dans ce carnet de bord, on a exposé la méthode suivie et les moyens utilisés afin d'assurer une bonne 
- recherche documentaire. Après avoir dressé une carte heuristique pour bien encadrer le projet et déterminer
- les mots clés, on a utilisé des différents outils pour obtenir des sources d'information. Le choix 
- d'outil dépendait du type d'information désirée. A la fin, une évaluation des sources selon des 
- métriques définis, a permis de juger la fiabilité de l'information et par la suite garantir la fiabilité de notre travail. 
- }
- \vspace*{\stretch{1}}
 \end{document}

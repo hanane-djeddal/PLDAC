@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.7)  30 APR 2020 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.7)  30 APR 2020 21:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**CarnetDeBord.tex
-(./CarnetDeBord.tex
+**CarnetDeBord2Final.tex
+(./CarnetDeBord2Final.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -358,12 +358,6 @@ Type  H <return>  for immediate help.
                                                   
 l.445 \ProcessOptions*
                       
-? ^^[[A^^[[A
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
 ? 
 
 ! Package babel Error: You haven't specified a language option.
@@ -624,19 +618,8 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen125
 \Gm@dimlist=\toks28
 )
-(./CarnetDeBord.aux
-
-! Package babel Error: You haven't defined the language french yet.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 \babel@aux{french}{}
-                         
-? 
-)
-\openout1 = `CarnetDeBord.aux'.
+(./CarnetDeBord2Final.aux)
+\openout1 = `CarnetDeBord2Final.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
@@ -652,7 +635,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen126
@@ -697,9 +681,9 @@ LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
 LaTeX Info: Redefining \nameref on input line 21.
 
-(./CarnetDeBord.out) (./CarnetDeBord.out)
+(./CarnetDeBord2Final.out) (./CarnetDeBord2Final.out)
 \@outlinefile=\write3
-\openout3 = `CarnetDeBord.out'.
+\openout3 = `CarnetDeBord2Final.out'.
 
 
 *geometry* driver: auto-detecting
@@ -752,50 +736,26 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>] (./CarnetDeBo
-rd.toc
-
-! Package babel Error: You haven't defined the language french yet.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \babel@toc {french}{}
-                         
-? 
-)
+rd2Final.toc)
 \tf@toc=\write4
-\openout4 = `CarnetDeBord.toc'.
+\openout4 = `CarnetDeBord2Final.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.47 \newpage
-              [1]
-
-! Package inputenc Error: Unicode char ̀ (U+300)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 À
-         ce jour, les différents nœuds d'accès  du réseau ne coopèrent ...
-
-? 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+              [1] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
 
 
 ! Package inputenc Error: Unicode char ́ (U+301)
@@ -805,7 +765,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72     \item Proposition de différents sché
+l.69     \item Proposition de différents sché
                                                 mas de clustering pour amél...
 
 ? 
@@ -817,7 +777,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 ...améliorer la qualité de service et l'é
+l.69 ...améliorer la qualité de service et l'é
                                                   quité des ressources. En...
 
 ? 
@@ -829,7 +789,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 ...rer la qualité de service et l'équité
+l.69 ...rer la qualité de service et l'équité
                                                    des ressources. En inclua...
 
 ? 
@@ -841,7 +801,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 ...n incluant des aspects de performance té
+l.69 ...n incluant des aspects de performance té
                                                   lécom aux méthodes pré...
 
 ? 
@@ -853,55 +813,51 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 ...cluant des aspects de performance télé
+l.69 ...cluant des aspects de performance télé
                                                   com aux méthodes préexis...
 
 ? 
-<schema.png, id=57, 1770.615pt x 1110.1475pt>
-File: schema.png Graphic file (type png)
-<use schema.png>
-Package pdftex.def Info: schema.png  used on input line 79.
-(pdftex.def)             Requested size: 520.86719pt x 326.57594pt.
+<motcle.png, id=56, 2067.725pt x 1022.82124pt>
+File: motcle.png Graphic file (type png)
+<use motcle.png>
+Package pdftex.def Info: motcle.png  used on input line 76.
+(pdftex.def)             Requested size: 520.86719pt x 257.65555pt.
 
-Overfull \hbox (48.83595pt too wide) in paragraph at lines 79--79
+Overfull \hbox (48.83595pt too wide) in paragraph at lines 76--76
 [][]  
  []
 
-[3 <./schema.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+[3 <./motcle.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 97--113
 
  []
 
 ! Misplaced alignment tab character &.
-l.104 \item[{[1]}] Brown, G. 2017. Cloud RAN &
-                                               the Next-Generation Mobile Ne...
-
-? 
-! Misplaced alignment tab character &.
-l.105 ...y Overview. IEEE Communications Surveys &
-                                                   Tutorials. 17, 1 (2015), ...
-
+<argument> Cloud RAN &
+                       the Next-Generation Mobile Network Architecture
+l.113 }
+       
 ? 
 [4]
-Overfull \hbox (53.6692pt too wide) in paragraph at lines 110--111
-\T1/cmr/m/n/14.4 ma-tion Net-works. 24, 4 (Dec. 2017), 389^^U403. DOI: https://
-doi.org/10.1007/s10776-
+Overfull \hbox (0.1261pt too wide) in paragraph at lines 113--113
+[]\T1/cmr/m/n/14.4 Muhammad Khan, Raad S. Al-hu-maima, and Hamed S. Al-Raweshid
+y. 2017.
  []
 
-
-Overfull \hbox (9.43541pt too wide) in paragraph at lines 116--117
-\T1/cmr/m/n/14.4 ing Al-go-rithm With Adap-tive Weights. IEEE Ac-cess. 8, (2020
-), 31171^^U31179.
- []
-
+! Misplaced alignment tab character &.
+<argument> ...rs and Geometry}. Springer Science &
+                                                   Business Media. \item [{[...
+l.113 }
+       
+? 
 [5]
-Overfull \hbox (26.06963pt too wide) in paragraph at lines 122--131
+Overfull \hbox (26.06963pt too wide) in paragraph at lines 119--132
  [][] \T1/cmr/m/n/14.4 Cet ar-ti-cle, fourni par notre en-cad-rant, date de 201
 4, 4 ans apr�s l'introduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--131
+Underfull \hbox (badness 10000) in paragraph at lines 119--132
 
  []
 
@@ -912,51 +868,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--144
 
 [6]
 
-! LaTeX Error: \begin{itemize} on input line 119 ended by \end{document}.
+! LaTeX Error: \begin{center} on input line 155 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 \end{document}
+l.157 \end{document}
                     
 ? 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
 [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
- (./CarnetDeBord.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
-Package rerunfilecheck Info: File `CarnetDeBord.out' has not changed.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
+ (./CarnetDeBord2Final.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
+Package rerunfilecheck Info: File `CarnetDeBord2Final.out' has not changed.
 (rerunfilecheck)             Checksum: 558C595C706F8DB9A83F2FBAAA073562;320.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  )
-(\end occurred inside a group at level 1)
+(\end occurred inside a group at level 2)
 
-### semi simple group (level 1) entered at line 119 (\begingroup)
+### semi simple group (level 2) entered at line 155 (\begingroup)
+### semi simple group (level 1) entered at line 115 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 7085 strings out of 494923
- 98316 string characters out of 6180742
- 183133 words of memory out of 5000000
- 10284 multiletter control sequences out of 15000+600000
- 12918 words of font info for 33 fonts, out of 8000000 for 9000
+ 7080 strings out of 494923
+ 98354 string characters out of 6180742
+ 184145 words of memory out of 5000000
+ 10281 multiletter control sequences out of 15000+600000
+ 13605 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,5n,28p,420b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,5n,28p,375b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecrm1440.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecbx1728.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecrm1000.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/p
-k/ljfour/jknappen/ec/ecbx1000.600pk> </home/h_djeddal/.texlive2017/texmf-var/fo
-nts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/h_djeddal/.texlive2017/texmf-v
-ar/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/h_djeddal/.texlive2017/te
-xmf-var/fonts/pk/ljfour/jknappen/ec/eccc2488.600pk> </home/h_djeddal/.texlive20
-17/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1728.600pk></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on CarnetDeBord.pdf (8 pages, 240258 bytes).
+en/ec/ecti1440.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecrm1440.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecbx1728.600pk> </home/h_djeddal/.texlive2017/texmf-var/fonts/p
+k/ljfour/jknappen/ec/ecrm1000.600pk> </home/h_djeddal/.texlive2017/texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/h_djeddal/.texlive2017/texmf-v
+ar/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/h_djeddal/.texlive2017/te
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/h_djeddal/.texlive20
+17/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc2488.600pk> </home/h_djeddal/.texl
+ive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1728.600pk></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on CarnetDeBord2Final.pdf (8 pages, 330543 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
+ 410 PDF objects out of 1000 (max. 8388607)
  111 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
+ 23 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -53,21 +53,10 @@
 \Large{\paragraph{}
         Aujourd'hui, le trafic de données sur les réseaux mobiles connaît une croissance explosive à mesure que les smartphones et tablettes compatibles avec Internet deviennent de plus en plus populaires.\\
 Afin de répondre à la demande croissante de trafic de données, les opérateurs de réseaux mobiles doivent augmenter leur capacité de traitement de données, comme le déploiement de plus de stations de base et l'ajout d'unités de traitement de données supplémentaires aux stations de base. \\
-Cependant, les dépenses en capital liées au déploiement de ces infrastructures de réseau deviennent de plus en plus élevées. 
- conséquent, l'optimisation des dépenses d'investissement et des dépenses d'exploitation tout en maintenant une qualité de
- service est devenue une nécessité pour les opérateurs de réseaux mobiles.
+Cependant, les dépenses en capital liées au déploiement de ces infrastructures de réseau deviennent de plus en plus élevées. Par conséquent, l'optimisation des dépenses d'investissement et des dépenses d'exploitation tout en maintenant une qualité de service est devenue une nécessité pour les opérateurs de réseaux mobiles.
 \paragraph{}
-Ce projet vise à mettre en œuvre des techniques de clustering afin de regrouper les ressources et infrastructures radio dans
- le but d'améliorer l'efficacité des services. 
-Chaque ville est desservie par plusieurs nœuds sans fil qui sont géographiquement séparés; chacun d'eux est responsable 
-d'une charge différente des appels vocaux, de la consommation multimédia et des messages provenant de différentes zones de 
-la ville dans la journée. 
-À ce jour, les différents nœuds d'accès  du réseau ne coopèrent pas, et chaque nœud est plutôt responsable de sa propre zone 
-géographique. Les architectures futures des réseaux proposent de regrouper plusieurs stations sans fil et les traiter comme 
-un ensemble avec un contrôleur commun, afin que les stations surchargées puissent être soutenues par des stations 
-sous-chargées. 
-\paragraph{}
-Dans le cadre de ce projet, on proposera des méthodes de clustering efficaces, adaptées aux spécificités de l'environnement sans fil et des métriques des services de télécommunication. On utilisera des données fournies par l'opérateur Orange.
+Ce projet vise à mettre en œuvre des techniques de clustering afin de regrouper les ressources et infrastructures radio dans le but d'améliorer l'efficacité des services. \\
+Dans ce cadre, on proposera des méthodes de clustering efficaces, adaptées aux spécificités de l'environnement sans fil et des métriques des services de télécommunication. On utilisera des données fournies par l'opérateur Orange.
 }
 \vspace*{\stretch{1}}
 \newpage
@@ -84,7 +73,7 @@ Dans le cadre de ce projet, on proposera des méthodes de clustering efficaces, 
 \section{Mots clés retenus}
 \begin{flushleft}
 Le schéma ci-dessous représente les mots clés utilisés dans ce projet sous forme d'une carte heuristique :\\
-\includegraphics[width=38em]{schema.png}\\[1.5cm]
+\includegraphics[width=38em]{motcle.png}\\[1.5cm]
 \end{flushleft}
 \section{Descriptif de la recherche documentaire}
 \paragraph{}
@@ -97,48 +86,49 @@ Pour cela, on a utilisé des pages web telles que Wikipedia, Whatis.techtarget, 
 etc, ainsi que des vidéos YouTube pour avoir des définitions des termes, des exemples et des 
 explications simplifiées. Par la suite, on a adopté une recherche par mots clés sur google 
 scholar, ieeexplore.ieee.org et le moteur de recherche SUper, pour étudier les architectures 
-RAN existants et la migration vers le cloud-RAN. On a pu obtenir des ressources en ligne telles 
-que des thèses de recherches, des revues et des articles de journal. Apès avoir une compréhension globale de l'architecture C-RAN, 
-il était necéssaire de savoir comment des différents concept sont traités dans le cardre de cette nouvelle technologie tels que:  
-l'interférence, la capacité des unités de traitement ainsi que les contraintes géographiques entre les différents site, 
-ainsi une recherche plus specifique, en combinant les différents mots clés permettait d'avoir des articles qui traitent 
-les sujets désirés. En suivant les références cités dans les différents articles trouvés, on est arrivé sur des thèmes d'ouverture 
-qui inclut les améliorations possible pour les technologies 5G.\\
+RAN existants et la migration vers le cloud-RAN. On a pu obtenir des ressources telles 
+que des thèses de recherches, des revues et des articles de journal qui étaient disponibles en ligne sur les bases de 
+données : IEE explore, ScienceDirect et les sites officiels des e-magazines (tel que Heavy Reading de Huawei).
 Pour la deuxième partie, l’étude sur les algorithmes de clustering général était basée sur le chapitre 10.3 du livre 
 “An introduction to Statistical Learning” et le cours “NDA: Clustering” fourni par notre encadrant; ainsi que les cours de 
 l'UE: sciences des données de licence 3 informatique. Ensuite, en suivant la même approche que la première partie, on a 
 étudié les algorithmes de clustering proposés pour les architectures C-RAN.
 \section{Bibliographie produite dans le cadre du projet}
 \paragraph{}Bibliographie générée depuis Zotero avec la norme ACM : \\
+\textrm{
 \begin{enumerate}
-\item[{[1]}] Brown, G. 2017. Cloud RAN & the Next-Generation Mobile Network Architecture. (2017), 9.
-\item[{[2]}] Checko, A. et al. 2015. Cloud RAN for Mobile Networks—A Technology Overview. IEEE Communications Surveys & Tutorials. 17, 1 (2015), 405–426. DOI:https://doi.org/10.1109/COMST.2014.2355255.
-\item[{[3]}] Chen, L. et al. 2018. Deep mobile traffic forecast and complementary base station clustering for C-RAN optimization. Journal of Network and Computer Applications. 121, (Nov. 2018), 59–69.\\
-DOI: https://doi.org/10.1016/j.jnca.2018.07.015.
-\item[{[4]}] I, C.-L. et al. 2014. Recent Progress on C-RAN Centralization and Cloudification. IEEE Access. 2, (2014), 1030–1039.\\DOI: https://doi.org/10.1109/ACCESS.2014.2351411.
-\item[{[5]}] James, G. et al. 2013. An Introduction to Statistical Learning. Springer New York.
-\item[{[6]}] Jaziri, A. et al. 2017. Tracking Traffic Peaks in Mobile Networks Using Statistics of Performance Metrics. International Journal of Wireless Information Networks. 24, 4 (Dec. 2017), 389–403. DOI: https://doi.org/10.1007/s10776-017-0335-6.
-\item[{[7]}] Khan, M. et al. 2017. QoS-Aware Dynamic RRH Allocation in a Self-Optimized Cloud Radio Access Network With RRH Proximity Constraint. IEEE Transactions on Network and Service Management. 14, 3 (Sep. 2017), 730–744. DOI:https://doi.org/10.1109/TNSM.2017.2719399.
-\item[{[8]}] Lee, D. et al. 2012. Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges. IEEE Communications Magazine. 50, 2 (Feb. 2012), 148–155.\\DOI: https://doi.org/10.1109/MCOM.2012.6146494.
-\item[{[9]}] Novaes, C. et al. 2020. Virtualized C-RAN Orchestration with Docker, Kubernetes and OpenAirInterface. arXiv:2001.08992 [eess]. (Jan. 2020).
-\item[{[10]}] Han, B. et al. 2019. Research on Resource Migration Based on Novel RRH-BBU Mapping in Cloud Radio Access Network for HSR Scenarios. IEEE Access. 7, (2019), 108542–108550.\\DOI: https://doi.org/10.1109/ACCESS.2019.2933567.
-\item[{[11]}] Wu, J. et al. 2015. Cloud radio access network (C-RAN): a primer. IEEE Network. 29, 1 (Jan. 2015), 35–41.\\DOI: https://doi.org/10.1109/MNET.2015.7018201.
-\item[{[12]}] Wu, Z. and Wu, Z. 2020. An Enhanced Regularized k-Means Type Clustering Algorithm With Adaptive Weights. IEEE Access. 8, (2020), 31171–31179. DOI: https://doi.org/10.1109/ACCESS.2020.2972333.
+\item[{[1]}] Gabriel Brown. \textit{Cloud RAN & the Next-Generation Mobile Network Architecture}. (2017), 9.
+\item[{[2]}] Aleksandra Checko, Henrik L. Christiansen, Ying Yan, Lara Scolari, Georgios Kardaras, Michael S. Berger, and Lars Dittmann. \textit{Cloud RAN for Mobile Networks-A Technology Overview}. IEEE Commun. Surv. Tutorials 17, 1 (2015), 405–426. DOI: https://doi.org/10.1109/COMST.2014.2355255
+\item[{[3]}] Longbiao Chen, Dingqi Yang, Daqing Zhang, Cheng Wang, Jonathan Li, and Thi-Mai-Trang Nguyen. 2018. \textit{Deep mobile traffic forecast and complementary base station clustering for C-RAN optimization}. Journal of Network and Computer Applications 121, (November 2018), 59–69. DOI: https://doi.org/10.1016/j.jnca.2018.07.015
+\item[{[4]}] Chih-Lin I, Jinri Huang, Ran Duan, Chunfeng Cui, Jesse Jiang, and Lei Li. 2014. \textit{Recent Progress on C-RAN Centralization and Cloudification}. IEEE Access 2, (2014), 1030–1039.\\ DOI: https://doi.org/10.1109/ACCESS.2014.2351411
+\item[{[5]}] Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2013. \textit{An Introduction to Statistical Learning}. Springer New York, New York, NY. DOI: https://doi.org/10.1007/978-1-4614-7138-7
+\item[{[6]}] Aymen Jaziri, Ridha Nasri, and Tijani Chahed. 2017. \textit{Tracking Traffic Peaks in Mobile Networks Using Statistics of Performance Metrics}. Int J Wireless Inf Networks 24, 4 (December 2017), 389–403. \\DOI: https://doi.org/10.1007/s10776-017-0335-6
+\item[{[7]}] Muhammad Khan, Raad S. Alhumaima, and Hamed S. Al-Raweshidy. 2017. {QoS-Aware Dynamic RRH Allocation in a Self-Optimized Cloud Radio Access Network With RRH Proximity Constraint}. IEEE Trans. Netw. Serv. Manage. 14, 3 (September 2017), 730–744. \\DOI: https://doi.org/10.1109/TNSM.2017.2719399
+\item[{[8]}] Daewon Lee, Hanbyul Seo, Bruno Clerckx, Eric Hardouin, David Mazzarese, Satoshi Nagata, and Krishna Sayana. 2012. \textit{Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges}. IEEE Commun. Mag. 50, 2 (February 2012), 148–155. DOI: https://doi.org/10.1109/MCOM.2012.6146494
+\item[{[9]}] Shai Shalev-Shwartz and Shai Ben-David. 2014. \textit{Understanding Machine Learning: From Theory to Algorithms}. Cambridge University Press, Cambridge. DOI: https://doi.org/10.1017/CBO9781107298019
+\item[{[10]}] John Stillwell. 1997.\textit{Numbers and Geometry}. Springer Science & Business Media.
+\item[{[11]}] Jun Wu, Zhifeng Zhang, Yu Hong, and Yonggang Wen. 2015. \textit{Cloud radio access network (C-RAN): a primer}. IEEE Network 29, 1 (January 2015), 35–41. DOI: https://doi.org/10.1109/MNET.2015.7018201
+\item[{[12]}] Ziheng Wu and Zixiang Wu. 2020. \textit{An Enhanced Regularized k-Means Type Clustering Algorithm With Adaptive Weights}. IEEE Access 8, (2020), 31171–31179. DOI: https://doi.org/10.1109/ACCESS.2020.2972333
 \end{enumerate}
+}
 \section{Évaluation des sources}
 \begin{itemize}
   \item [{[4]}] Recent Progress on C-RAN Centralization and Cloudification :
   \paragraph{}
+
   Cet article, fourni par notre encadrant, date de 2014, 4 ans après l'introduction 
   de l'architecture C-RAN par China Mobile Research Institute (CMRI). Il donne les 
   derniers progrès dans cette technologie ainsi que les choix d’implémentations et 
   les améliorations possibles. Parmi les auteurs de cet article : la chargée de la 
-  recherche et développement des réseaux sans fils avancées de CRMI , ainsi que 2 chefs 
+  recherche et développement des réseaux sans fils avancées de CMRI , ainsi que 2 chefs 
   de projets à CMRI et le directeur de The Green Communications Research Center de CMRI. 
   Le projet étant basé sur le clustering dans les architectures C-RAN, une bonne compréhension 
   de la technologie était un point crucial, et donc cet article, le travail direct d’une équipe 
-  de l'Institut où la technologie a émergé, était une source importante pour guider la recherche.\\
-  
+  de l'Institut où la technologie a émergé, était une source importante pour guider la recherche.
+  C'est aussi une source fiable, en effet, l'article est cité 201 sur google scholar, 136 sur web of science, 171 fois sur 
+  Scopus et 140 fois sur Crossref. Il était partagé sur des réseaux sociaux tels que Facebook, Twitter et Patents, en plus de  
+  103 partage sur Mendeley (un logiciel de gestion bibliographique). Il était utilisé en téléchargement PDF 11131 fois, 
+  88 fois étant en janvier 2020. \\
   \item [{[8]}] Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges
   \paragraph{}
   En un niveau plus détaillé dans la recherche, il était essentiel de comprendre la communications 
@@ -151,7 +141,6 @@ DOI: https://doi.org/10.1016/j.jnca.2018.07.015.
    qui présente une étude expérimentale était le travail d'une équipe des chercheurs qui ont contribué au
    développement de la technologie LTE et qui viennent de différents groupes spécialisés en télécommunication tels que 
    Orange, Samsung Electronics, LG Electronics, Huawei technologies etc. Ce qui implique une très bonne fiabilité.\\
-  
    \item [{[12]}] An Enhanced Regularized k-Means Type Clustering Algorithm With Adaptive Weights:
    \paragraph{}
   Cet article, disponible sur IEEE digital Library et publié dans le journal IEEE Access en février 2020
@@ -164,14 +153,5 @@ DOI: https://doi.org/10.1016/j.jnca.2018.07.015.
 
    \vspace*{\stretch{0.5}}
    \begin{center}
- \section*{\LARGE{Conclusion}}
-   \end{center}
- \Large{\paragraph{}
- Dans ce carnet de bord, on a exposé la méthode suivie et les moyens utilisés afin d'assurer une bonne 
- recherche documentaire. Après avoir dressé une carte heuristique pour bien encadrer le projet et déterminer
- les mots clés, on a utilisé des différents outils pour obtenir des sources d'information. Le choix 
- d'outil dépendait du type d'information désirée. A la fin, une évaluation des sources selon des 
- métriques définis, a permis de juger la fiabilité de l'information et par la suite garantir la fiabilité de notre travail. 
- }
- \vspace*{\stretch{1}}
+
 \end{document}
